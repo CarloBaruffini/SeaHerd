@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E5DDDD6235B4EEE002E4310 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5DDDD5235B4EEE002E4310 /* OnboardingViewController.swift */; };
 		CD7870DC235B354500338FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7870DB235B354500338FD1 /* AppDelegate.swift */; };
 		CD7870DE235B354500338FD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7870DD235B354500338FD1 /* SceneDelegate.swift */; };
+		CD7870E0235B354500338FD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7870DF235B354500338FD1 /* ViewController.swift */; };
 		CD7870E3235B354500338FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7870E1235B354500338FD1 /* Main.storyboard */; };
 		CD7870E5235B354600338FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7870E4235B354600338FD1 /* Assets.xcassets */; };
 		CD7870E8235B354600338FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7870E6235B354600338FD1 /* LaunchScreen.storyboard */; };
@@ -18,13 +18,20 @@
 		CDF10040235B3CD300FC54C0 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF1003F235B3CD300FC54C0 /* Map.storyboard */; };
 		CDF10044235B3FBF00FC54C0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10043235B3FBF00FC54C0 /* MapViewController.swift */; };
 		CDF10047235B4F8300FC54C0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10046235B4F8300FC54C0 /* Utils.swift */; };
+		CDF1004B235B578900FC54C0 /* EntranceToGoliathRoute.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDF1004A235B578900FC54C0 /* EntranceToGoliathRoute.plist */; };
+		CDF1004E235B586D00FC54C0 /* MapArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF1004D235B586D00FC54C0 /* MapArea.swift */; };
+		CDF10050235B5AEA00FC54C0 /* PacificOcean.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDF1004F235B5AEA00FC54C0 /* PacificOcean.plist */; };
+		CDF10052235B5C0500FC54C0 /* MapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10051235B5C0500FC54C0 /* MapOverlay.swift */; };
+		CDF10054235B5C5800FC54C0 /* MapAreaOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10053235B5C5800FC54C0 /* MapAreaOverlayView.swift */; };
+		CDF10057235B8A8700FC54C0 /* JellyfishAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10056235B8A8700FC54C0 /* JellyfishAnnotationView.swift */; };
+		CDF10059235B8C0B00FC54C0 /* JellyfishAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10058235B8C0B00FC54C0 /* JellyfishAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E5DDDD5235B4EEE002E4310 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CD7870D8235B354500338FD1 /* SeaHerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaHerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7870DB235B354500338FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7870DD235B354500338FD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD7870DF235B354500338FD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD7870E2235B354500338FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD7870E4235B354600338FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD7870E7235B354600338FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,8 +40,14 @@
 		CD7870F3235B393B00338FD1 /* Progress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
 		CDF1003F235B3CD300FC54C0 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		CDF10043235B3FBF00FC54C0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		CDF10045235B440F00FC54C0 /* jelly_route.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = jelly_route.gpx; sourceTree = "<group>"; };
 		CDF10046235B4F8300FC54C0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CDF1004A235B578900FC54C0 /* EntranceToGoliathRoute.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EntranceToGoliathRoute.plist; sourceTree = "<group>"; };
+		CDF1004D235B586D00FC54C0 /* MapArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapArea.swift; sourceTree = "<group>"; };
+		CDF1004F235B5AEA00FC54C0 /* PacificOcean.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PacificOcean.plist; sourceTree = "<group>"; };
+		CDF10051235B5C0500FC54C0 /* MapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOverlay.swift; sourceTree = "<group>"; };
+		CDF10053235B5C5800FC54C0 /* MapAreaOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAreaOverlayView.swift; sourceTree = "<group>"; };
+		CDF10056235B8A8700FC54C0 /* JellyfishAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyfishAnnotationView.swift; sourceTree = "<group>"; };
+		CDF10058235B8C0B00FC54C0 /* JellyfishAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyfishAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +64,6 @@
 		CD7870CF235B354500338FD1 = {
 			isa = PBXGroup;
 			children = (
-				CDF10045235B440F00FC54C0 /* jelly_route.gpx */,
 				CD7870DA235B354500338FD1 /* SeaHerd */,
 				CD7870D9235B354500338FD1 /* Products */,
 			);
@@ -68,6 +80,9 @@
 		CD7870DA235B354500338FD1 /* SeaHerd */ = {
 			isa = PBXGroup;
 			children = (
+				CDF10055235B78AD00FC54C0 /* Custom Components */,
+				CDF1004C235B584C00FC54C0 /* Models */,
+				CDF10049235B572600FC54C0 /* Paths */,
 				CDF10042235B3F6A00FC54C0 /* Storyboards */,
 				CDF10041235B3F6400FC54C0 /* Controllers */,
 				CD7870DB235B354500338FD1 /* AppDelegate.swift */,
@@ -82,7 +97,8 @@
 		CDF10041235B3F6400FC54C0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9E5DDDD5235B4EEE002E4310 /* OnboardingViewController.swift */,
+				CD7870DF235B354500338FD1 /* ViewController.swift */,
+				CDF10043235B3FBF00FC54C0 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -97,6 +113,34 @@
 				CD7870E6235B354600338FD1 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CDF10049235B572600FC54C0 /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				CDF1004F235B5AEA00FC54C0 /* PacificOcean.plist */,
+				CDF1004A235B578900FC54C0 /* EntranceToGoliathRoute.plist */,
+			);
+			path = Paths;
+			sourceTree = "<group>";
+		};
+		CDF1004C235B584C00FC54C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDF1004D235B586D00FC54C0 /* MapArea.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDF10055235B78AD00FC54C0 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				CDF10053235B5C5800FC54C0 /* MapAreaOverlayView.swift */,
+				CDF10051235B5C0500FC54C0 /* MapOverlay.swift */,
+				CDF10056235B8A8700FC54C0 /* JellyfishAnnotationView.swift */,
+				CDF10058235B8C0B00FC54C0 /* JellyfishAnnotation.swift */,
+			);
+			path = "Custom Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +201,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF1004B235B578900FC54C0 /* EntranceToGoliathRoute.plist in Resources */,
+				CDF10050235B5AEA00FC54C0 /* PacificOcean.plist in Resources */,
 				CD7870E8235B354600338FD1 /* LaunchScreen.storyboard in Resources */,
 				CD7870E5235B354600338FD1 /* Assets.xcassets in Resources */,
 				CD7870F2235B393500338FD1 /* Stats.storyboard in Resources */,
@@ -173,12 +219,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF10057235B8A8700FC54C0 /* JellyfishAnnotationView.swift in Sources */,
 				CDF10047235B4F8300FC54C0 /* Utils.swift in Sources */,
 				CD7870E0235B354500338FD1 /* ViewController.swift in Sources */,
 				CD7870DC235B354500338FD1 /* AppDelegate.swift in Sources */,
-				9E5DDDD6235B4EEE002E4310 /* OnboardingViewController.swift in Sources */,
 				CD7870DE235B354500338FD1 /* SceneDelegate.swift in Sources */,
+				CDF1004E235B586D00FC54C0 /* MapArea.swift in Sources */,
+				CDF10052235B5C0500FC54C0 /* MapOverlay.swift in Sources */,
+				CDF10059235B8C0B00FC54C0 /* JellyfishAnnotation.swift in Sources */,
 				CDF10044235B3FBF00FC54C0 /* MapViewController.swift in Sources */,
+				CDF10054235B5C5800FC54C0 /* MapAreaOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
