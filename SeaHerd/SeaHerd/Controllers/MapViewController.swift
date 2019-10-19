@@ -12,44 +12,41 @@ import CoreLocation
 
 class MapViewController: UIViewController {
     
-    let locationManager = CLLocationManager()
     let jellyfish = MKPointAnnotation()
-
+    let trackDrawer = TrackDrawer(fileNames: ["jelly_route"])
+    weak var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.requestWhenInUseAuthorization()
-
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.startUpdatingLocation()
-        }
-
-        mapView.delegate = self
-
-        if let coordinate = mapView.userLocation.location?.coordinate {
-            mapView.setCenter(coordinate, animated: true)
-        }
-        
+                
         let location = CLLocationCoordinate2D(latitude: 32.026458, longitude: 32.026458)
         self.jellyfish.coordinate = location
         self.jellyfish.title = "Scusa, mi tocchi la medusa?"
         
         self.mapView.addAnnotation(self.jellyfish)
+        self.movePosition()
+        
+        guard let polygon = self.trackDrawer.getPolygons() else { return }
+        let polygonView = MKPolygonRenderer(overlay: polygon)
+        polygonView.strokeColor = UIColor.magenta
+
+        self.mapView.addOverlay(polygon)
+    }
+    
+    func movePosition() {
+        // Set timer to run after 5 seconds.
+        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { [weak self] _ in
+            // Set animation to last 4 seconds.
+            UIView.animate(withDuration: 4, animations: {
+                // Update annotation coordinate to be the destination coordinate
+                //self?.jellyfish.coordinate =
+            }, completion: nil)
+        }
     }
     
     @IBOutlet weak var mapView: MKMapView!
 }
 
-extension MapViewController: CLLocationManagerDelegate, MKMapViewDelegate {
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let locValue: CLLocationCoordinate2D = manager.location!.coordinate
-
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-        let region = MKCoordinateRegion(center: locValue, span: span)
-        
-        self.mapView.setRegion(region, animated: true)
-    }
+extension MapViewController: MKMapViewDelegate {
+    
 }
