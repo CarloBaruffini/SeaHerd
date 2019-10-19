@@ -33,6 +33,7 @@ class MapViewController: UIViewController {
         
         self.addOverlay()
         self.addJellyfishPins()
+        self.addPath()
     }
     
     /// Add a MapOverlay to the map view
@@ -47,6 +48,16 @@ class MapViewController: UIViewController {
         mapView.addAnnotation(annotation)
     }
     
+    /// Add to the map the path of the jellyfish
+    func addPath() {
+        guard let points = MapArea.plist("JellyPath") as? [String] else { return }
+        
+        let cgPoints = points.map { NSCoder.cgPoint(for: $0) }
+        let coords = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
+        let myPolyline = MKPolyline(coordinates: coords, count: coords.count)
+        mapView.addOverlay(myPolyline)
+    }
+    
     /// Outlet of the map view
     @IBOutlet weak var mapView: MKMapView!
 }
@@ -55,9 +66,10 @@ class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
     /// MapView calls this methos when there is an overlay in the area that the map is displaying
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        if overlay is MapOverlay {
-            // If the area is the one defined by the MapOverlay draws a MapOverlayView
-            return MapAreaOverlayView(overlay: overlay, overlayImage: UIImage(imageLiteralResourceName: "overlay_park"))
+        if overlay is MKPolyline {
+            let lineView = MKPolylineRenderer(overlay: overlay)
+            lineView.strokeColor = UIColor.green
+            return lineView
         }
         
         return MKOverlayRenderer()
