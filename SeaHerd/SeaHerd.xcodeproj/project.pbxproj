@@ -62,18 +62,34 @@
 		CD7870DA235B354500338FD1 /* SeaHerd */ = {
 			isa = PBXGroup;
 			children = (
+				CDF10042235B3F6A00FC54C0 /* Storyboards */,
+				CDF10041235B3F6400FC54C0 /* Controllers */,
 				CD7870DB235B354500338FD1 /* AppDelegate.swift */,
 				CD7870DD235B354500338FD1 /* SceneDelegate.swift */,
+				CD7870E4235B354600338FD1 /* Assets.xcassets */,
+				CD7870E9235B354600338FD1 /* Info.plist */,
+			);
+			path = SeaHerd;
+			sourceTree = "<group>";
+		};
+		CDF10041235B3F6400FC54C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				CD7870DF235B354500338FD1 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CDF10042235B3F6A00FC54C0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				CD7870E1235B354500338FD1 /* Main.storyboard */,
 				CD7870F1235B393500338FD1 /* Stats.storyboard */,
 				CDF1003F235B3CD300FC54C0 /* Map.storyboard */,
 				CD7870F3235B393B00338FD1 /* Progress.storyboard */,
-				CD7870E4235B354600338FD1 /* Assets.xcassets */,
 				CD7870E6235B354600338FD1 /* LaunchScreen.storyboard */,
-				CD7870E9235B354600338FD1 /* Info.plist */,
 			);
-			path = SeaHerd;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
