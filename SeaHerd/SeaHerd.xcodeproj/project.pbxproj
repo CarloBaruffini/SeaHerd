@@ -13,6 +13,9 @@
 		CD7870E3235B354500338FD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7870E1235B354500338FD1 /* Main.storyboard */; };
 		CD7870E5235B354600338FD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7870E4235B354600338FD1 /* Assets.xcassets */; };
 		CD7870E8235B354600338FD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7870E6235B354600338FD1 /* LaunchScreen.storyboard */; };
+		CD7870F2235B393500338FD1 /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7870F1235B393500338FD1 /* Stats.storyboard */; };
+		CD7870F4235B393B00338FD1 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7870F3235B393B00338FD1 /* Progress.storyboard */; };
+		CDF10040235B3CD300FC54C0 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF1003F235B3CD300FC54C0 /* Map.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CD7870E4235B354600338FD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD7870E7235B354600338FD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD7870E9235B354600338FD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7870F1235B393500338FD1 /* Stats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
+		CD7870F3235B393B00338FD1 /* Progress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
+		CDF1003F235B3CD300FC54C0 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				CD7870DD235B354500338FD1 /* SceneDelegate.swift */,
 				CD7870DF235B354500338FD1 /* ViewController.swift */,
 				CD7870E1235B354500338FD1 /* Main.storyboard */,
+				CD7870F1235B393500338FD1 /* Stats.storyboard */,
+				CDF1003F235B3CD300FC54C0 /* Map.storyboard */,
+				CD7870F3235B393B00338FD1 /* Progress.storyboard */,
 				CD7870E4235B354600338FD1 /* Assets.xcassets */,
 				CD7870E6235B354600338FD1 /* LaunchScreen.storyboard */,
 				CD7870E9235B354600338FD1 /* Info.plist */,
@@ -127,7 +136,10 @@
 			files = (
 				CD7870E8235B354600338FD1 /* LaunchScreen.storyboard in Resources */,
 				CD7870E5235B354600338FD1 /* Assets.xcassets in Resources */,
+				CD7870F2235B393500338FD1 /* Stats.storyboard in Resources */,
+				CD7870F4235B393B00338FD1 /* Progress.storyboard in Resources */,
 				CD7870E3235B354500338FD1 /* Main.storyboard in Resources */,
+				CDF10040235B3CD300FC54C0 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
