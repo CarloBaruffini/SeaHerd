@@ -7,29 +7,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Map-->
         <scene sceneID="E5Z-1p-s5x">
             <objects>
                 <viewController id="xmk-GW-7KT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQk-ga-p1x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4M-M5-ob7">
-                                <rect key="frame" x="186" y="438" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="89m-ku-pHS"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="mappin.circle" catalog="system" selectedImage="mappin.circle.fill" id="DIL-Wd-x7X"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssB-rA-DSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-113" y="62"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mappin.circle" catalog="system" width="64" height="60"/>
+        <image name="mappin.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
