@@ -16,6 +16,8 @@
 		CD7870F2235B393500338FD1 /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7870F1235B393500338FD1 /* Stats.storyboard */; };
 		CD7870F4235B393B00338FD1 /* Progress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7870F3235B393B00338FD1 /* Progress.storyboard */; };
 		CDF10040235B3CD300FC54C0 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF1003F235B3CD300FC54C0 /* Map.storyboard */; };
+		CDF10044235B3FBF00FC54C0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10043235B3FBF00FC54C0 /* MapViewController.swift */; };
+		CDF10047235B4F8300FC54C0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10046235B4F8300FC54C0 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		CD7870F1235B393500338FD1 /* Stats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
 		CD7870F3235B393B00338FD1 /* Progress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Progress.storyboard; sourceTree = "<group>"; };
 		CDF1003F235B3CD300FC54C0 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		CDF10043235B3FBF00FC54C0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CDF10045235B440F00FC54C0 /* jelly_route.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = jelly_route.gpx; sourceTree = "<group>"; };
+		CDF10046235B4F8300FC54C0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 		CD7870CF235B354500338FD1 = {
 			isa = PBXGroup;
 			children = (
+				CDF10045235B440F00FC54C0 /* jelly_route.gpx */,
 				CD7870DA235B354500338FD1 /* SeaHerd */,
 				CD7870D9235B354500338FD1 /* Products */,
 			);
@@ -68,6 +74,7 @@
 				CD7870DD235B354500338FD1 /* SceneDelegate.swift */,
 				CD7870E4235B354600338FD1 /* Assets.xcassets */,
 				CD7870E9235B354600338FD1 /* Info.plist */,
+				CDF10046235B4F8300FC54C0 /* Utils.swift */,
 			);
 			path = SeaHerd;
 			sourceTree = "<group>";
@@ -166,9 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDF10047235B4F8300FC54C0 /* Utils.swift in Sources */,
+				CD7870E0235B354500338FD1 /* ViewController.swift in Sources */,
 				CD7870DC235B354500338FD1 /* AppDelegate.swift in Sources */,
 				9E5DDDD6235B4EEE002E4310 /* OnboardingViewController.swift in Sources */,
 				CD7870DE235B354500338FD1 /* SceneDelegate.swift in Sources */,
+				CDF10044235B3FBF00FC54C0 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
