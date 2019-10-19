@@ -10,19 +10,33 @@
         <!--Map-->
         <scene sceneID="E5Z-1p-s5x">
             <objects>
-                <viewController id="xmk-GW-7KT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zQk-ga-p1x">
+                <viewController id="xmk-GW-7KT" customClass="MapViewController" customModule="SeaHerd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zQk-ga-p1x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Dr5-Gh-nFL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Dr5-Gh-nFL" firstAttribute="leading" secondItem="89m-ku-pHS" secondAttribute="leading" id="A4V-md-pXC"/>
+                            <constraint firstItem="89m-ku-pHS" firstAttribute="trailing" secondItem="Dr5-Gh-nFL" secondAttribute="trailing" id="IzI-WI-yKL"/>
+                            <constraint firstItem="Dr5-Gh-nFL" firstAttribute="top" secondItem="zQk-ga-p1x" secondAttribute="top" id="TDi-4k-zqZ"/>
+                            <constraint firstItem="89m-ku-pHS" firstAttribute="bottom" secondItem="Dr5-Gh-nFL" secondAttribute="bottom" id="n8D-qa-NXN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="89m-ku-pHS"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="mappin.circle" catalog="system" selectedImage="mappin.circle.fill" id="DIL-Wd-x7X"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="Dr5-Gh-nFL" id="Izl-bO-vnk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssB-rA-DSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="62"/>
+            <point key="canvasLocation" x="-113.04347826086958" y="61.607142857142854"/>
         </scene>
     </scenes>
     <resources>
