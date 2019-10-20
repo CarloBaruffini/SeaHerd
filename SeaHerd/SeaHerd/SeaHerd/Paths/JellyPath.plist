@@ -2,19 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>{-1.5642,144.9695}</string>
-	<string>{31.9421,127.3456}</string>
-	<string>{29.37193,129.1034}</string>
-	<string>{26.8919,131.2128}</string>
-	<string>{25.94747,135.4315}</string>
-	<string>{27.67311,138.0682}</string>
-	<string>{27.67311,143.1659}</string>
-	<string>{25.6309,148.4393}</string>
-	<string>{24.6762,153.0096}</string>
-	<string>{23.23054,160.7440}</string>
-	<string>{20.4571,163.7323}</string>
-	<string>{17.96755,163.7323}</string>
-	<string>{12.37144,164.2596}</string>
-	<string>{13.22850,157.7557}</string>
+	<string>{42.71145,144.50054}</string>
+	<string>{40.47699,158.47515}</string>
+	<string>{41.0097,-177.00337}</string>
+	<string>{37.81928,-122.86274}</string>
+	<string>{27.39840, -122.30587}</string>
+	<string>{20.09301,-134.64009}</string>
+	<string>{1.00623,-157.40376}</string>
+	<string>{23.51961,166.12163}</string>
 </array>
 </plist>

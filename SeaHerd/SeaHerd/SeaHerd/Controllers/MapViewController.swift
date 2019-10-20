@@ -33,7 +33,8 @@ class MapViewController: UIViewController {
         
         self.addOverlay()
         self.addJellyfishPins()
-        self.addPath()
+        self.addPath(fileName: "JellyPath")
+        self.addPath(fileName: "JellyPathClosed")
     }
     
     /// Add a MapOverlay to the map view
@@ -49,14 +50,17 @@ class MapViewController: UIViewController {
     }
     
     /// Add to the map the path of the jellyfish
-    func addPath() {
-        guard let points = MapArea.plist("JellyPath2") as? [String] else { return }
+    func addPath(fileName: String) {
+        guard let points = MapArea.plist(fileName) as? [String] else { return }
         
         let cgPoints = points.map { NSCoder.cgPoint(for: $0) }
         let coords = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
         let myPolyline = MKPolyline(coordinates: coords, count: coords.count)
+        myPolyline.title = fileName
+        
         mapView.addOverlay(myPolyline)
     }
+    
     
     /// Outlet of the map view
     @IBOutlet weak var mapView: MKMapView!
@@ -69,6 +73,13 @@ extension MapViewController: MKMapViewDelegate {
         if overlay is MKPolyline {
             let lineView = MKPolylineRenderer(overlay: overlay)
             lineView.strokeColor = UIColor.green
+            
+            if overlay.title == "JellyPathClosed" {
+                lineView.lineDashPhase = 2
+                lineView.lineDashPattern = [NSNumber(value: 1),NSNumber(value: 5)]
+                lineView.strokeColor = UIColor.red
+            }
+            
             return lineView
         }
         
