@@ -99,7 +99,7 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
-        let annotationView = JellyfishAnnotationView(annotation: annotation, reuseIdentifier: annotation.title == "Scusa, mi  tocchi la medusa?": "jellyfish" : "jellyfish2")
+        let annotationView = JellyfishAnnotationView(annotation: annotation, reuseIdentifier: annotation.title == "Scusa, mi  tocchi la medusa?" ? "jellyfish" : "jellyfish2")
         annotationView.canShowCallout = true
         annotationView.frame.size = CGSize(width: 50, height: 50)
         return annotationView
