@@ -77,8 +77,9 @@ extension MapViewController: MKMapViewDelegate {
             
             if overlay.title == "JellyPathClosed" {
                 lineView.lineDashPhase = 2
-                lineView.lineDashPattern = [NSNumber(value: 1),NSNumber(value: 5)]
-                lineView.strokeColor = UIColor.red
+                lineView.lineDashPattern = [NSNumber(value: 4),NSNumber(value: 10)]
+                lineView.alpha = 0.7
+                lineView.strokeColor = UIColor(hexFromString: "#003D61")
             }
             
             return lineView
