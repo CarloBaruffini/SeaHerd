@@ -72,7 +72,8 @@ extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if overlay is MKPolyline {
             let lineView = MKPolylineRenderer(overlay: overlay)
-            lineView.strokeColor = UIColor.green
+            lineView.strokeColor = UIColor(hexFromString: "#003D61")
+            lineView.lineWidth = 8
             
             if overlay.title == "JellyPathClosed" {
                 lineView.lineDashPhase = 2

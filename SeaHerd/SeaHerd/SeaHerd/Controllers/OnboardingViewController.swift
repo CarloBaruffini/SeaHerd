@@ -63,7 +63,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
                 if (index == titles.count - 1){
                     let adoptButton = UIButton()
                     adoptButton.frame = CGRect(x:32,y:txt2.frame.maxY+10,width:scrollWidth-64,height:50)
-                    adoptButton.backgroundColor = UIColor.red
+                    adoptButton.backgroundColor = UIColor(hexFromString: "#003D61")
                     adoptButton.setTitle("Adopt a jellyfish", for: .normal)
                     adoptButton.addTarget(self, action: #selector(adoptButtonPressed), for: .touchUpInside)
                     slide.addSubview(adoptButton)
