@@ -46,7 +46,16 @@ class MapViewController: UIViewController {
     /// Add on the map the annotation for each jellyfish to display
     func addJellyfishPins() {
         let annotation = JellyfishAnnotation(coordinate: self.jellyArea.midCoordinate, title: "Scusa, mi  tocchi la medusa?", subtitle: "")
-        mapView.addAnnotation(annotation)
+        self.mapView.addAnnotation(annotation)
+        
+        guard let points = MapArea.plist("JelliesLocation") as? [String] else { return }
+        
+        let cgPoints = points.map { NSCoder.cgPoint(for: $0) }
+        let coords = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
+        for coord in coords {
+            let annotation = JellyfishAnnotation(coordinate: coord, title: "", subtitle: "")
+            self.mapView.addAnnotation(annotation)
+        }
     }
     
     /// Add to the map the path of the jellyfish
@@ -89,7 +98,8 @@ extension MapViewController: MKMapViewDelegate {
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let annotationView = JellyfishAnnotationView(annotation: annotation, reuseIdentifier: "jellyfish")
+        
+        let annotationView = JellyfishAnnotationView(annotation: annotation, reuseIdentifier: annotation.title == "Scusa, mi  tocchi la medusa?" ? "jellyfish" : "jellyfish2")
         annotationView.canShowCallout = true
         annotationView.frame.size = CGSize(width: 50, height: 50)
         return annotationView
