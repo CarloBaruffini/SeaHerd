@@ -16,9 +16,8 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     var scrollWidth: CGFloat! = 0.0
     var scrollHeight: CGFloat! = 0.0
     
-    var titles = ["ciao","ciao","ciao"]
-    var descriptions = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit.","Lorem ipsum dolor sit amet, consectetur adipiscing elit."]
-    var images = ["","",""]
+    var texts = ["The Pacific Ocean\n needs your help!","The garbage is floating everywhere","Polluting the sea and killing the sea life", "Help making an impact"]
+    var images = ["Sea","GarbageSea","Sea","JellySea"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +35,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         //crete the slides and add them
         var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
 
-        for index in 0..<titles.count {
+        for index in 0..<texts.count {
             
                 frame.origin.x = scrollWidth * CGFloat(index)
                 frame.size = CGSize(width: scrollWidth, height: scrollHeight)
@@ -45,45 +44,43 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
 
                 //subviews
                 let imageView = UIImageView.init(image: UIImage.init(named: images[index]))
-                imageView.frame = CGRect(x:0,y:0,width:300,height:300)
+                imageView.frame = CGRect(x:0,y:scrollHeight/2 + 15,width:scrollWidth,height:scrollHeight/2)
                 imageView.contentMode = .scaleAspectFit
-                imageView.center = CGPoint(x:scrollWidth/2,y: scrollHeight/2 - 50)
               
-                let txt1 = UILabel.init(frame: CGRect(x:32,y:imageView.frame.maxY+30,width:scrollWidth-64,height:30))
-                txt1.textAlignment = .center
-                txt1.font = UIFont.boldSystemFont(ofSize: 20.0)
-                txt1.text = titles[index]
 
-                let txt2 = UILabel.init(frame: CGRect(x:32,y:txt1.frame.maxY+10,width:scrollWidth-64,height:50))
-                txt2.textAlignment = .center
-                txt2.numberOfLines = 3
-                txt2.font = UIFont.systemFont(ofSize: 18.0)
-                txt2.text = descriptions[index]
-            
-                if (index == titles.count - 1){
-                    let adoptButton = UIButton()
-                    adoptButton.frame = CGRect(x:32,y:txt2.frame.maxY+10,width:scrollWidth-64,height:50)
-                    adoptButton.backgroundColor = UIColor(hexFromString: "#003D61")
-                    adoptButton.setTitle("Adopt a jellyfish", for: .normal)
-                    adoptButton.addTarget(self, action: #selector(adoptButtonPressed), for: .touchUpInside)
-                    slide.addSubview(adoptButton)
-                }
+                let txt = UILabel.init(frame: CGRect(x:32,y:300,width:scrollWidth-64,height:100))
+                txt.textAlignment = .center
+                txt.numberOfLines = 3
+                txt.font = UIFont.boldSystemFont(ofSize: 26.0)
+//                txt.adjustsFontSizeToFitWidth = true
+                txt.textColor = UIColor.white
+                txt.text = texts[index]
 
                 slide.addSubview(imageView)
-                slide.addSubview(txt1)
-                slide.addSubview(txt2)
+                slide.addSubview(txt)
                 scrollView.addSubview(slide)
+            
+            if (index == texts.count - 1){
+                let adoptButton = UIButton()
+                adoptButton.frame = CGRect(x:32,y:txt.frame.maxY+10,width:scrollWidth-64,height:50)
+                adoptButton.backgroundColor = UIColor(hexFromString: "#003D61")
+                adoptButton.setTitle("Adopt your jelly", for: .normal)
+                adoptButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 26.0)
+                adoptButton.layer.cornerRadius = 12
+                adoptButton.addTarget(self, action: #selector(adoptButtonPressed), for: .touchUpInside)
+                slide.addSubview(adoptButton)
+            }
 
             }
 
             //set width of scrollview to accomodate all the slides
-            scrollView.contentSize = CGSize(width: scrollWidth * CGFloat(titles.count), height: scrollHeight)
+            scrollView.contentSize = CGSize(width: scrollWidth * CGFloat(texts.count), height: scrollHeight)
 
             //disable vertical scroll/bounce
             self.scrollView.contentSize.height = 1.0
 
             //initial state
-            pageControl.numberOfPages = titles.count + 1
+            pageControl.numberOfPages = texts.count + 1
             pageControl.currentPage = 0
     }
     
