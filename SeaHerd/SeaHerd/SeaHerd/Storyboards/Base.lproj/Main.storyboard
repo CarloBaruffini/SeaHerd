@@ -7,30 +7,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeaHerd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="SeaHerd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZQ-qu-qFa">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DEC-DB-7R2">
+                                <rect key="frame" x="187.5" y="788" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1qI-kY-kbE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="vtc-LD-Qso" kind="presentation" modalPresentationStyle="fullScreen" id="Kat-iI-cD7"/>
-                                </connections>
-                            </button>
+                                <viewLayoutGuide key="contentLayoutGuide" id="YDA-gG-QQC"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="N16-D9-Hpr"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DEC-DB-7R2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TpZ-F4-YNK"/>
+                            <constraint firstItem="DEC-DB-7R2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.8" id="nJB-Tb-8Nc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="DEC-DB-7R2" id="HHr-UE-Mvd"/>
+                        <outlet property="scrollView" destination="1qI-kY-kbE" id="k2r-jk-v36"/>
+                        <segue destination="vtc-LD-Qso" kind="presentation" identifier="ShowTabBar" modalPresentationStyle="fullScreen" id="lxI-77-YzA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
         <!--Map-->
         <scene sceneID="h2Y-OJ-p98">
@@ -71,11 +83,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.01408207975" green="0.23586386440000001" blue="0.38040888309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
-                        <segue destination="JLc-Dn-Zay" kind="relationship" relationship="viewControllers" id="IgQ-37-4Tc"/>
-                        <segue destination="eXa-Pa-tcj" kind="relationship" relationship="viewControllers" id="PKv-Dn-ewL"/>
                         <segue destination="rcL-SX-ZHp" kind="relationship" relationship="viewControllers" id="LuX-Bp-6Qn"/>
+                        <segue destination="eXa-Pa-tcj" kind="relationship" relationship="viewControllers" id="PKv-Dn-ewL"/>
+                        <segue destination="JLc-Dn-Zay" kind="relationship" relationship="viewControllers" id="IgQ-37-4Tc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcE-9c-Mqf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -83,4 +96,5 @@
             <point key="canvasLocation" x="1043" y="138"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.01408207975" green="0.23586386440000001" blue="0.38040888309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

@@ -43,4 +43,5 @@
         <image name="mappin.circle" catalog="system" width="64" height="60"/>
         <image name="mappin.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
+    <color key="tintColor" red="0.01408207975" green="0.23586386440000001" blue="0.38040888309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
