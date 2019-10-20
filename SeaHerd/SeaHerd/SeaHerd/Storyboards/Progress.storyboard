@@ -14,7 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="6V7-as-QOL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.77647058820000003" green="0.83529411760000005" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ZOk-dv-JEI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="line.horizontal.3.decrease.circle" catalog="system" selectedImage="line.horizontal.3.decrease.circle.fill" id="qg8-fS-BTd"/>

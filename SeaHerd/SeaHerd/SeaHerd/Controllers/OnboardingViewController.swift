@@ -41,11 +41,6 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
                 frame.size = CGSize(width: scrollWidth, height: scrollHeight)
 
                 let slide = UIView(frame: frame)
-            
-            //subviews
-            let gradientImageView = UIImageView.init(image: UIImage.init(named: "Rectangle"))
-            gradientImageView.frame = CGRect(x:0,y:0,width:scrollWidth,height:scrollHeight/2 + 50)
-            gradientImageView.contentMode = .scaleToFill
 
                 //subviews
                 let imageView = UIImageView.init(image: UIImage.init(named: images[index]))
@@ -61,7 +56,6 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
                 txt.textColor = UIColor.white
                 txt.text = texts[index]
 
-                slide.addSubview(gradientImageView)
                 slide.addSubview(imageView)
                 slide.addSubview(txt)
                 scrollView.addSubview(slide)
