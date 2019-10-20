@@ -50,7 +50,7 @@ class MapViewController: UIViewController {
     
     /// Add to the map the path of the jellyfish
     func addPath() {
-        guard let points = MapArea.plist("JellyPath") as? [String] else { return }
+        guard let points = MapArea.plist("JellyPath2") as? [String] else { return }
         
         let cgPoints = points.map { NSCoder.cgPoint(for: $0) }
         let coords = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }

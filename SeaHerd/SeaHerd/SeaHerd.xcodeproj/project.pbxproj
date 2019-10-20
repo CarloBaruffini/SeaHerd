@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B29EA0A235C36D4000C5DC7 /* JellyPath2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B29EA09235C34EC000C5DC7 /* JellyPath2.plist */; };
 		CD0BE1FF235B933F007B5116 /* JellyPath.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD0BE1FE235B933F007B5116 /* JellyPath.plist */; };
 		CD7870DC235B354500338FD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7870DB235B354500338FD1 /* AppDelegate.swift */; };
 		CD7870DE235B354500338FD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7870DD235B354500338FD1 /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B29EA09235C34EC000C5DC7 /* JellyPath2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = JellyPath2.plist; sourceTree = "<group>"; };
 		CD0BE1FE235B933F007B5116 /* JellyPath.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = JellyPath.plist; sourceTree = "<group>"; };
 		CD7870D8235B354500338FD1 /* SeaHerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeaHerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7870DB235B354500338FD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				CDF1004F235B5AEA00FC54C0 /* PacificOcean.plist */,
 				CDF1004A235B578900FC54C0 /* EntranceToGoliathRoute.plist */,
+				9B29EA09235C34EC000C5DC7 /* JellyPath2.plist */,
 				CD0BE1FE235B933F007B5116 /* JellyPath.plist */,
 			);
 			path = Paths;
@@ -204,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B29EA0A235C36D4000C5DC7 /* JellyPath2.plist in Resources */,
 				CDF1004B235B578900FC54C0 /* EntranceToGoliathRoute.plist in Resources */,
 				CDF10050235B5AEA00FC54C0 /* PacificOcean.plist in Resources */,
 				CD7870E8235B354600338FD1 /* LaunchScreen.storyboard in Resources */,
