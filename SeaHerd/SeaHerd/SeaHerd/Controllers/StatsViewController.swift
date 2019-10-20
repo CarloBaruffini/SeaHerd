@@ -16,6 +16,7 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var jellyImageView: UIImageView!
     
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +30,10 @@ class StatsViewController: UIViewController {
             self.jellyImageView.frame.origin.y += 20
         })
         // Do any additional setup after loading the view.
+        
+        self.operationTimeLabel.text = "2 days 3 hours"
+        
     }
-    
     func lookUpCurrentLocation(location: CLLocationCoordinate2D?, completionHandler: @escaping (CLPlacemark?)
                     -> Void ) {
         // Use the last reported location.
