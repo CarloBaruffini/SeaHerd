@@ -19,7 +19,7 @@ class JellyfishAnnotationView: MKAnnotationView {
     override init (annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         self.image = UIImage(imageLiteralResourceName: reuseIdentifier == "jellyfish" ? "jellyfish.png" : "Jelly.png")
-        if (reuseIdentifier == "jellyfish") {
+        if(reuseIdentifier == "jellyfish") {
             UIView.animate(withDuration: 3.0, delay: 0, options: [.repeat, .autoreverse], animations: {
                 self.frame.origin.y += 20
             })
@@ -28,6 +28,5 @@ class JellyfishAnnotationView: MKAnnotationView {
                 self.frame.origin.y += 10
             })
         }
-        
     }
 }

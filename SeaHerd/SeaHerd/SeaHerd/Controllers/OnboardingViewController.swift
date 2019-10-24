@@ -23,7 +23,6 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         self.view.layoutIfNeeded()
         //to call viewDidLayoutSubviews() and get dynamic width and height of scrollview
 

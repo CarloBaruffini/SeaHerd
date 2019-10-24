@@ -37,6 +37,21 @@ class MapViewController: UIViewController {
         self.addPath(fileName: "JellyPathClosed")
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        for annotation in mapView.annotations {
+            let annotationView = mapView.view(for: annotation)
+            if(annotationView?.reuseIdentifier == "jellyfish") {
+                UIView.animate(withDuration: 3.0, delay: 0, options: [.repeat, .autoreverse], animations: {
+                    annotationView?.frame.origin.y += 20
+                })
+            } else {
+                UIView.animate(withDuration: 1.0, delay: 0.5, options: [.repeat, .autoreverse], animations: {
+                    annotationView?.frame.origin.y += 10
+                })
+            }
+        }
+    }
+    
     /// Add a MapOverlay to the map view
     func addOverlay() {
         let overlay = MapOverlay(mapArea: self.jellyArea)

@@ -25,15 +25,18 @@ class StatsViewController: UIViewController {
         lookUpCurrentLocation(location: location) { (questo) in
             self.locationLabel.text = questo?.name
         }
-        
-        UIView.animate(withDuration: 1.5, delay: 0, options: [.repeat, .autoreverse], animations: {
-            self.jellyImageView.frame.origin.y += 20
-        })
         // Do any additional setup after loading the view.
         
         self.operationTimeLabel.text = "2 days 3 hours"
         
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 1.5, delay: 0, options: [.repeat, .autoreverse], animations: {
+            self.jellyImageView.frame.origin.y += 20
+        })
+    }
+    
     func lookUpCurrentLocation(location: CLLocationCoordinate2D?, completionHandler: @escaping (CLPlacemark?)
                     -> Void ) {
         // Use the last reported location.
