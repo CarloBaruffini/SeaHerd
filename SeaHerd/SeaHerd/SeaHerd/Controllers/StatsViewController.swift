@@ -16,19 +16,21 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var jellyImageView: UIImageView!
     
-    var timer = Timer()
+    var operationTime: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let mapArea = MapArea(filename: "PacificOcean")
-        var location = mapArea.midCoordinate
+        let location = mapArea.midCoordinate
         lookUpCurrentLocation(location: location) { (questo) in
             self.locationLabel.text = questo?.name
         }
-        // Do any additional setup after loading the view.
-        
-        self.operationTimeLabel.text = "2 days 3 hours"
-        
+        operationTime = 3709876
+        updateOperationTime(seconds: operationTime)
+        _ = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            self.operationTime = self.operationTime + Int(timer.timeInterval)
+            self.updateOperationTime(seconds: self.operationTime)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -63,6 +65,16 @@ class StatsViewController: UIViewController {
         }
     }
 
+    private func updateOperationTime(seconds: Int){
+        DispatchQueue.main.async {
+            self.operationTimeLabel.text = self.secondsToDayHoursMinutesSeconds(seconds: seconds)
+        }
+    }
+    
+    private func secondsToDayHoursMinutesSeconds (seconds : Int) -> String {
+        return "\( seconds / (24 * 3600) )d, \( (seconds % (24 * 3600)) / 3600 )h, \((seconds % 3600) / 60)m, \((seconds % 3600) % 60)s"
+    }
+    
     /*
     // MARK: - Navigation
 
