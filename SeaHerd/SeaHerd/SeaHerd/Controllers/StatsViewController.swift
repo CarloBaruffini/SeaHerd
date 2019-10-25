@@ -17,13 +17,16 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var jellyImageView: UIImageView!
     
     var operationTime: Int = 0
+    var initialPos: CGFloat = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let mapArea = MapArea(filename: "PacificOcean")
         let location = mapArea.midCoordinate
-        lookUpCurrentLocation(location: location) { (questo) in
-            self.locationLabel.text = questo?.name
+        lookUpCurrentLocation(location: location) { (placemark) in
+            DispatchQueue.main.async {
+                self.locationLabel.text = placemark?.name
+            }
         }
         operationTime = 3709876
         updateOperationTime(seconds: operationTime)
@@ -31,12 +34,17 @@ class StatsViewController: UIViewController {
             self.operationTime = self.operationTime + Int(timer.timeInterval)
             self.updateOperationTime(seconds: self.operationTime)
         }
+        self.initialPos = jellyImageView.frame.origin.y
     }
     
     override func viewDidAppear(_ animated: Bool) {
         UIView.animate(withDuration: 1.5, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.jellyImageView.frame.origin.y += 20
         })
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        jellyImageView.frame.origin.y = initialPos
     }
     
     func lookUpCurrentLocation(location: CLLocationCoordinate2D?, completionHandler: @escaping (CLPlacemark?)

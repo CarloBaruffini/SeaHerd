@@ -19,14 +19,14 @@ class JellyfishAnnotationView: MKAnnotationView {
     override init (annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         self.image = UIImage(imageLiteralResourceName: reuseIdentifier == "jellyfish" ? "jellyfish.png" : "Jelly.png")
-        if(reuseIdentifier == "jellyfish") {
-            UIView.animate(withDuration: 3.0, delay: 0, options: [.repeat, .autoreverse], animations: {
-                self.frame.origin.y += 20
-            })
-        } else {
-            UIView.animate(withDuration: 1.0, delay: 0.5, options: [.repeat, .autoreverse], animations: {
-                self.frame.origin.y += 10
-            })
-        }
+//        if(reuseIdentifier == "jellyfish") {
+//            UIView.animate(withDuration: 3.0, delay: 0, options: [.repeat, .autoreverse], animations: {
+//                self.frame.origin.y += 20
+//            })
+//        } else {
+//            UIView.animate(withDuration: 1.0, delay: 0.5, options: [.repeat, .autoreverse], animations: {
+//                self.frame.origin.y += 10
+//            })
+//        }
     }
 }

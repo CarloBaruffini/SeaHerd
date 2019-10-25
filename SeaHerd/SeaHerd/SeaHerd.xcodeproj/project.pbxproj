@@ -97,7 +97,6 @@
 				CD7870DD235B354500338FD1 /* SceneDelegate.swift */,
 				CD7870E4235B354600338FD1 /* Assets.xcassets */,
 				CD7870E9235B354600338FD1 /* Info.plist */,
-				CDF10046235B4F8300FC54C0 /* Utils.swift */,
 			);
 			path = SeaHerd;
 			sourceTree = "<group>";
@@ -146,6 +145,7 @@
 		CDF10055235B78AD00FC54C0 /* Custom Components */ = {
 			isa = PBXGroup;
 			children = (
+				CDF10046235B4F8300FC54C0 /* Utils.swift */,
 				9B0D5357235C51FF0009A7DD /* Extentions.swift */,
 				CDF10053235B5C5800FC54C0 /* MapAreaOverlayView.swift */,
 				CDF10051235B5C0500FC54C0 /* MapOverlay.swift */,

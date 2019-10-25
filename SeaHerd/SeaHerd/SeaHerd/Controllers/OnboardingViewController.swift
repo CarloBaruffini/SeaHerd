@@ -21,11 +21,37 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) {
+            (granted, error) in
+            if granted {
+                print("yes")
+            } else {
+                print("no")
+                let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                      switch action.style {
+                      case .default:
+                            print("default")
 
+                      case .cancel:
+                            print("cancel")
+
+                      case .destructive:
+                            print("destructive")
+
+
+                      @unknown default:
+                        debugPrint("VAFFANCULO")
+                        fatalError()
+                    }}))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
         // Do any additional setup after loading the view.
         self.view.layoutIfNeeded()
+        
         //to call viewDidLayoutSubviews() and get dynamic width and height of scrollview
-
         self.scrollView.delegate = self
         scrollView.isPagingEnabled = true
         scrollView.showsHorizontalScrollIndicator = false
