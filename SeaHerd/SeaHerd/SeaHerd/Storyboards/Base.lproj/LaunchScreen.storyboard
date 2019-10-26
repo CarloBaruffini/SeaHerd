@@ -15,13 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="zhv-Dr-pvn">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="zhv-Dr-pvn">
+                                <rect key="frame" x="0.0" y="164" width="414" height="578"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zhv-Dr-pvn" secondAttribute="height" multiplier="184:257" id="MsJ-eF-TgH"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.2392156869" blue="0.38039216399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zhv-Dr-pvn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ATE-xe-gM9"/>
+                            <constraint firstItem="zhv-Dr-pvn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cQN-cw-nnO"/>
+                            <constraint firstItem="zhv-Dr-pvn" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="p4G-Vv-8sk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
