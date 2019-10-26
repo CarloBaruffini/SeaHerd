@@ -18,11 +18,33 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Dr5-Gh-nFL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSO-XF-f4o">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="230.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6w-FK-2j1">
+                                        <rect key="frame" x="20" y="73.5" width="161.5" height="84"/>
+                                        <string key="text">Follow the
+Jellybots</string>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <color key="textColor" red="0.0" green="0.2392156869" blue="0.38039216399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="tintColor" red="0.0" green="0.2392156869" blue="0.38039216399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="o6w-FK-2j1" firstAttribute="leading" secondItem="wSO-XF-f4o" secondAttribute="leading" constant="20" id="ASe-rT-g4r"/>
+                                    <constraint firstItem="o6w-FK-2j1" firstAttribute="centerY" secondItem="wSO-XF-f4o" secondAttribute="centerY" id="UOb-ZT-4L9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="wSO-XF-f4o" firstAttribute="height" secondItem="89m-ku-pHS" secondAttribute="height" multiplier="0.3" id="7cL-Ki-9Be"/>
                             <constraint firstItem="Dr5-Gh-nFL" firstAttribute="leading" secondItem="89m-ku-pHS" secondAttribute="leading" id="A4V-md-pXC"/>
                             <constraint firstItem="89m-ku-pHS" firstAttribute="trailing" secondItem="Dr5-Gh-nFL" secondAttribute="trailing" id="IzI-WI-yKL"/>
+                            <constraint firstItem="wSO-XF-f4o" firstAttribute="leading" secondItem="89m-ku-pHS" secondAttribute="leading" id="OPK-22-Z0V"/>
+                            <constraint firstItem="wSO-XF-f4o" firstAttribute="trailing" secondItem="89m-ku-pHS" secondAttribute="trailing" id="R3y-sD-UJZ"/>
+                            <constraint firstItem="wSO-XF-f4o" firstAttribute="top" secondItem="zQk-ga-p1x" secondAttribute="top" id="RQQ-Fh-Ggd"/>
                             <constraint firstItem="Dr5-Gh-nFL" firstAttribute="top" secondItem="zQk-ga-p1x" secondAttribute="top" id="TDi-4k-zqZ"/>
                             <constraint firstItem="89m-ku-pHS" firstAttribute="bottom" secondItem="Dr5-Gh-nFL" secondAttribute="bottom" id="n8D-qa-NXN"/>
                         </constraints>
@@ -32,6 +54,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="Dr5-Gh-nFL" id="Izl-bO-vnk"/>
+                        <outlet property="titleView" destination="wSO-XF-f4o" id="UoN-Qs-snu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssB-rA-DSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
