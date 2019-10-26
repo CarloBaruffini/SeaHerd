@@ -121,7 +121,8 @@ extension MapViewController: MKMapViewDelegate {
         if let annotationTitle = view.annotation?.title
         {
             if annotationTitle == "Scusa, mi  tocchi la medusa?" {
-                 tabBarController!.selectedIndex = 1
+                tabBarController!.selectedIndex = 1
+                mapView.bringSubviewToFront(view)
             }
         }
     }
