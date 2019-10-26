@@ -9,12 +9,12 @@
 import UIKit
 import MapKit
 
-class StatsViewController: UIViewController {
-
-    @IBOutlet weak var nudgeTextView: UITextView!
+class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+ 
+    @IBOutlet weak var tipsTableView: UITableView!
     @IBOutlet weak var operationTimeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var jellyImageView: UIImageView!
+//    @IBOutlet weak var jellyImageView: UIImageView!
     
     var operationTime: Int = 0
     var initialPos: CGFloat = 0
@@ -34,18 +34,21 @@ class StatsViewController: UIViewController {
             self.operationTime = self.operationTime + Int(timer.timeInterval)
             self.updateOperationTime(seconds: self.operationTime)
         }
-        self.initialPos = jellyImageView.frame.origin.y
+//        self.initialPos = jellyImageView.frame.origin.y
+        
+        tipsTableView.delegate = self
+        tipsTableView.dataSource = self
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        UIView.animate(withDuration: 1.5, delay: 0, options: [.repeat, .autoreverse], animations: {
-            self.jellyImageView.frame.origin.y += 20
-        })
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        jellyImageView.frame.origin.y = initialPos
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        UIView.animate(withDuration: 1.5, delay: 0, options: [.repeat, .autoreverse], animations: {
+//            self.jellyImageView.frame.origin.y += 20
+//        })
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        jellyImageView.frame.origin.y = initialPos
+//    }
     
     func lookUpCurrentLocation(location: CLLocationCoordinate2D?, completionHandler: @escaping (CLPlacemark?)
                     -> Void ) {
@@ -92,5 +95,41 @@ class StatsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         2
+     }
+     
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellTip", for: indexPath) as! TipTableViewCell
+        
+        if indexPath.row == 0 {
+            cell.backgroundImage.image = UIImage(named: "cloud")
+            cell.backgroundImage.contentMode = .left
+            cell.imageTip.image = UIImage(named: "shop")
+            cell.textTip.text =
+            """
+            Did you know
+            it takes from
+            10 to 30 years
+            to decompose a
+            Plastic Bag
+            in the sea?
+            """
+        } else {
+            cell.backgroundImage.image = UIImage(named: "cloud2")
+            cell.backgroundImage.contentMode = .right
+            cell.imageTip.isHidden = true
+            cell.textTip.text =
+            """
+            The Garbage Patch
+            is 3 times bigger
+            than the France
+            """
+        }
+        
+        return cell
+     }
 
 }
