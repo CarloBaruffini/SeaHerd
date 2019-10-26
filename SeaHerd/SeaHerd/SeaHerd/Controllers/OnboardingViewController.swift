@@ -22,16 +22,12 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) {
-            (granted, error) in
-            if granted {
-                print("yes")
-            } else {
-                print("no")
-                
-            }
-            
-        }
+        let manager = NotificationManager()
+             manager.notifications = [
+                 Notification(id: "reminder-1", title: "The Jellybot is on the move again!")
+             ]
+             manager.schedule()
+        
         // Do any additional setup after loading the view.
         self.view.layoutIfNeeded()
         
