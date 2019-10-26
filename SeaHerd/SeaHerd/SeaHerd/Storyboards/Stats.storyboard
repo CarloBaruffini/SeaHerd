@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VMy-Ry-RLv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VMy-Ry-RLv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,27 +16,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="859-q1-4yy" userLabel="Title View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="192.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="ESM-X2-dun" userLabel="Background Image View">
-                                        <rect key="frame" x="0.0" y="0.0" width="408" height="209"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="ESM-X2-dun" userLabel="Background Image View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="192.5"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MOTTO HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeS-Eq-rT2">
-                                        <rect key="frame" x="42" y="145" width="101" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="OiL-40-dfX">
+                                        <rect key="frame" x="310" y="69" width="84" height="115.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OiL-40-dfX" secondAttribute="height" multiplier="93:128" id="E2U-08-sfC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JellyBot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fs-0H-fS0">
+                                        <rect key="frame" x="23" y="75" width="128.5" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="OiL-40-dfX">
-                                        <rect key="frame" x="272" y="52" width="93" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JellyBot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fs-0H-fS0">
-                                        <rect key="frame" x="42" y="95" width="129" height="42"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOTTO HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeS-Eq-rT2">
+                                        <rect key="frame" x="23" y="125" width="101" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -44,17 +43,27 @@
                                 <color key="backgroundColor" red="0.0" green="0.2392156869" blue="0.38039216399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="5Vo-EC-1Ik"/>
+                                    <constraint firstItem="ESM-X2-dun" firstAttribute="top" secondItem="859-q1-4yy" secondAttribute="top" id="5RU-mn-p7s"/>
+                                    <constraint firstAttribute="trailing" secondItem="OiL-40-dfX" secondAttribute="trailing" constant="20" id="5Sj-2G-n6o"/>
+                                    <constraint firstItem="MeS-Eq-rT2" firstAttribute="leading" secondItem="1Fs-0H-fS0" secondAttribute="leading" id="86w-N5-obk"/>
+                                    <constraint firstAttribute="bottom" secondItem="ESM-X2-dun" secondAttribute="bottom" id="CnL-ST-VEV"/>
+                                    <constraint firstItem="OiL-40-dfX" firstAttribute="height" secondItem="859-q1-4yy" secondAttribute="height" multiplier="0.6" id="IZ0-G9-XhP"/>
+                                    <constraint firstItem="ESM-X2-dun" firstAttribute="leading" secondItem="859-q1-4yy" secondAttribute="leading" id="JPt-8N-IfA"/>
+                                    <constraint firstItem="1Fs-0H-fS0" firstAttribute="leading" secondItem="859-q1-4yy" secondAttribute="leading" constant="23" id="Kq4-VQ-vaf"/>
+                                    <constraint firstItem="MeS-Eq-rT2" firstAttribute="top" secondItem="1Fs-0H-fS0" secondAttribute="bottom" constant="8" id="Mjs-vI-elV"/>
+                                    <constraint firstAttribute="trailing" secondItem="ESM-X2-dun" secondAttribute="trailing" id="U6y-Jf-CPW"/>
+                                    <constraint firstItem="1Fs-0H-fS0" firstAttribute="centerY" secondItem="859-q1-4yy" secondAttribute="centerY" id="i4E-Vg-AcO"/>
+                                    <constraint firstAttribute="bottom" secondItem="OiL-40-dfX" secondAttribute="bottom" constant="8" id="rcD-cp-UWw"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help making an impact" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcq-sQ-QmI">
-                                <rect key="frame" x="16" y="232" width="382" height="41"/>
+                                <rect key="frame" x="16" y="224.5" width="382" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                 <color key="textColor" red="0.0" green="0.23921568630000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gIP-3d-Xwi">
-                                <rect key="frame" x="0.0" y="369" width="414" height="444"/>
+                                <rect key="frame" x="0.0" y="361.5" width="414" height="451.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellTip" rowHeight="176" id="NQg-IY-FaQ" customClass="TipTableViewCell" customModule="SeaHerd" customModuleProvider="target">
@@ -107,7 +116,7 @@ Plastic Bag in the sea? </string>
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gI3-Mh-bKD">
-                                <rect key="frame" x="32" y="289" width="350" height="48"/>
+                                <rect key="frame" x="32" y="281.5" width="350" height="48"/>
                                 <subviews>
                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1s9-r9-wIh" userLabel="TimeIcon">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="0.0"/>
@@ -146,8 +155,8 @@ Plastic Bag in the sea? </string>
                             <constraint firstItem="Hcq-sQ-QmI" firstAttribute="top" secondItem="859-q1-4yy" secondAttribute="bottom" constant="32" id="1vl-Hd-BXQ"/>
                             <constraint firstItem="859-q1-4yy" firstAttribute="top" secondItem="14r-ko-IqQ" secondAttribute="top" id="6mA-aZ-r0x"/>
                             <constraint firstItem="ZMq-Yp-jw5" firstAttribute="trailing" secondItem="Hcq-sQ-QmI" secondAttribute="trailing" constant="16" id="PCF-jY-yYB"/>
-                            <constraint firstItem="859-q1-4yy" firstAttribute="top" secondItem="14r-ko-IqQ" secondAttribute="top" id="PGn-dE-hYs"/>
                             <constraint firstAttribute="trailing" secondItem="859-q1-4yy" secondAttribute="trailing" id="ZMm-oZ-s5e"/>
+                            <constraint firstItem="859-q1-4yy" firstAttribute="height" secondItem="ZMq-Yp-jw5" secondAttribute="height" multiplier="0.25" id="cNX-M9-Uue"/>
                             <constraint firstItem="gIP-3d-Xwi" firstAttribute="leading" secondItem="ZMq-Yp-jw5" secondAttribute="leading" id="cbI-TT-ebJ"/>
                             <constraint firstItem="ZMq-Yp-jw5" firstAttribute="trailing" secondItem="gI3-Mh-bKD" secondAttribute="trailing" constant="32" id="d5k-FW-5iI"/>
                             <constraint firstItem="ZMq-Yp-jw5" firstAttribute="bottom" secondItem="gIP-3d-Xwi" secondAttribute="bottom" id="h9y-QP-o2j"/>
@@ -177,7 +186,7 @@ Plastic Bag in the sea? </string>
         <image name="JB Logo" width="627" height="854"/>
         <image name="LocationPinIcon" width="26" height="37"/>
         <image name="TimeIcon" width="30" height="35"/>
-        <image name="chart.pie" catalog="system" width="64" height="62"/>
+        <image name="chart.pie" catalog="system" width="64" height="60"/>
         <image name="chart.pie.fill" catalog="system" width="64" height="62"/>
         <image name="cloud" width="155" height="179"/>
         <image name="shop" width="73" height="97"/>
