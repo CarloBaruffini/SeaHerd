@@ -12,6 +12,15 @@ import CoreLocation
 
 class MapViewController: UIViewController {
     
+      override func viewWillAppear(_ animated: Bool) {
+
+        let timer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false, block: { timer in
+            //This is a public function stored in "Custom Components/Utils.swift"
+              showAlert(vc: self)
+        })
+      
+        }
+
     @IBOutlet weak var titleView: UIView!
     
     let jellyfish = MKPointAnnotation()
