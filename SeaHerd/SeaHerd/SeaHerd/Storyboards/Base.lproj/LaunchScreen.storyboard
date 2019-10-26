@@ -15,17 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="zhv-Dr-pvn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="zhv-Dr-pvn">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="zhv-Dr-pvn" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="FBT-ff-zP1"/>
-                            <constraint firstItem="zhv-Dr-pvn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pxd-Uv-BfB"/>
-                            <constraint firstAttribute="bottom" secondItem="zhv-Dr-pvn" secondAttribute="bottom" id="fq8-5Q-cC2"/>
-                            <constraint firstItem="zhv-Dr-pvn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pp9-CA-eah"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.0" green="0.2392156869" blue="0.38039216399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -35,6 +31,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="1024" height="1024"/>
+        <image name="JB Logo" width="627" height="854"/>
     </resources>
 </document>

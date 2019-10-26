@@ -55,7 +55,7 @@
                                 <rect key="frame" x="0.0" y="413" width="414" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Jelly" translatesAutoresizingMaskIntoConstraints="NO" id="h7m-yD-cKe" userLabel="JellyImageView">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="h7m-yD-cKe" userLabel="JellyImageView">
                                 <rect key="frame" x="107" y="475" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -80,7 +80,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Jelly" width="172" height="171"/>
+        <image name="JB Logo" width="627" height="854"/>
         <image name="LocationPinIcon" width="26" height="37"/>
         <image name="Sea" width="414" height="427"/>
         <image name="TimeIcon" width="30" height="35"/>

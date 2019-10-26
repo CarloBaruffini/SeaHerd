@@ -23,7 +23,7 @@ class MapViewController: UIViewController {
         // Set the controller as delegate of the mapview
         self.mapView.delegate = self
         
-        // add blurr effect on the title view
+        // Adds blurr effect on the title view
         titleView.backgroundColor = .clear
 
         let blurEffect = UIBlurEffect(style: .regular)
