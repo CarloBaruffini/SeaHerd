@@ -12,6 +12,7 @@ class ProgressViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var sinceLabel: UILabel!
+    @IBOutlet weak var rewardButton: UIButton!
     
     private var items = ["Plastic Bottles","Plastic Bags","Plastic Glasses","Plastic Plates"]
     private var itemsNumber = ["12","40","19","16"]
@@ -31,6 +32,8 @@ class ProgressViewController: UIViewController {
         //Get the result string:
         let result = formatter.string(from: date)
         sinceLabel.text = "since \(result)"
+        
+        self.rewardButton.layer.cornerRadius = 8
     }
     
 
@@ -46,7 +49,7 @@ class ProgressViewController: UIViewController {
 
 }
 
-extension ProgressViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension ProgressViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
@@ -58,5 +61,9 @@ extension ProgressViewController: UICollectionViewDataSource, UICollectionViewDe
         cell.itemNumberLabel.text = itemsNumber[indexPath.row]
         cell.layer.cornerRadius = 12
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (self.collectionView.frame.size.width / 2 - 20), height: (self.collectionView.frame.size.height / 2 - 20))
     }
 }
