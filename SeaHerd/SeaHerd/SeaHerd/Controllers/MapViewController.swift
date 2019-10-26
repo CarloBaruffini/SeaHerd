@@ -12,6 +12,7 @@ import CoreLocation
 
 class MapViewController: UIViewController {
     
+    @IBOutlet weak var titleView: UIView!
     
     let jellyfish = MKPointAnnotation()
     
@@ -21,6 +22,17 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         // Set the controller as delegate of the mapview
         self.mapView.delegate = self
+        
+        // add blurr effect on the title view
+        titleView.backgroundColor = .clear
+
+        let blurEffect = UIBlurEffect(style: .regular)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        //always fill the view
+        blurEffectView.frame = titleView.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+
+        titleView.insertSubview(blurEffectView, at: 0)
         
         // Define the distance from the ocean top left coordinate to the ocean bottom right coordinate.
         let latDelta = jellyArea.overlayTopLeftCoordinate.latitude - jellyArea.overlayBottomRightCoordinate.latitude
@@ -36,21 +48,6 @@ class MapViewController: UIViewController {
         self.addPath(fileName: "JellyPath")
         self.addPath(fileName: "JellyPathClosed")
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        for annotation in mapView.annotations {
-//            let annotationView = mapView.view(for: annotation)
-//            if(annotationView?.reuseIdentifier == "jellyfish") {
-//                UIView.animate(withDuration: 3.0, delay: 0, options: [.repeat, .autoreverse], animations: {
-//                    annotationView?.frame.origin.y += 20
-//                })
-//            } else {
-//                UIView.animate(withDuration: 1.0, delay: 0.5, options: [.repeat, .autoreverse], animations: {
-//                    annotationView?.frame.origin.y += 10
-//                })
-//            }
-//        }
-//    }
     
     /// Add a MapOverlay to the map view
     func addOverlay() {
@@ -68,7 +65,7 @@ class MapViewController: UIViewController {
         let cgPoints = points.map { NSCoder.cgPoint(for: $0) }
         let coords = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
         for coord in coords {
-            let annotation = JellyfishAnnotation(coordinate: coord, title: "", subtitle: "")
+            let annotation = JellyfishAnnotation(coordinate: coord, title: "prova", subtitle: "")
             self.mapView.addAnnotation(annotation)
         }
     }
@@ -120,4 +117,13 @@ extension MapViewController: MKMapViewDelegate {
         return annotationView
     }
     
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let annotationTitle = view.annotation?.title
+        {
+            if annotationTitle == "Scusa, mi  tocchi la medusa?" {
+                 tabBarController!.selectedIndex = 1
+            }
+        }
+    }
+
 }
