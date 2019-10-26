@@ -21,7 +21,7 @@ class StatsViewController: UIViewController {
     
     private var operationTime: Int = 0
     private var initialPos: CGFloat = 0
-    private var nudges = ["Did you know it takes from 10 to 30 years to decompose a Plastic Bag in the sea?", "We ingest microplastic in the equivalent of 20 water bottle per year?"]
+    private var nudges = ["Did you know it takes from 10 to 30 years to decompose a Plastic Bag in the sea?", "We ingest 250 gr of microplastic per year! It's the equivalent of 20 water bottle!"]
     private var nudgesImages = ["First Nudge Image","Second Nudge Image"]
     
     

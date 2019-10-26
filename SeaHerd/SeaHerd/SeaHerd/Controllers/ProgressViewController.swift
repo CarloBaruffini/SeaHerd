@@ -9,10 +9,12 @@
 import UIKit
 
 class ProgressViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var sinceLabel: UILabel!
     @IBOutlet weak var rewardButton: UIButton!
+    @IBOutlet weak var barProgressView: UIProgressView!
+    @IBOutlet weak var rewardLabel: UILabel!
     
     private var items = ["Plastic Bottles","Plastic Bags","Plastic Glasses","Plastic Plates"]
     private var itemsNumber = ["12","40","19","16"]
@@ -22,7 +24,7 @@ class ProgressViewController: UIViewController {
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-
+        
         // Do any additional setup after loading the view.
         //get the date
         let date = Date()
@@ -33,11 +35,33 @@ class ProgressViewController: UIViewController {
         let result = formatter.string(from: date)
         sinceLabel.text = "since \(result)"
         
-        self.rewardButton.layer.cornerRadius = 8
-        
+        rewardButton.layer.cornerRadius = 8
+        switch barProgressView.progress {
+        case 0..<0.2:
+            rewardLabel.text = "Need to clean some more..."
+            rewardButton.backgroundColor = UIColor(hexFromString: "#BBBBBB")
+            rewardButton.isEnabled = false
+        case 0.2..<0.5:
+            rewardLabel.text = "Doing great we are near to the half!"
+            rewardButton.backgroundColor = UIColor(hexFromString: "#BBBBBB")
+            rewardButton.isEnabled = false
+        case 0.5..<0.75:
+            rewardLabel.text = "Great job, almost there!"
+            rewardButton.backgroundColor = UIColor(hexFromString: "#BBBBBB")
+            rewardButton.isEnabled = false
+        case 0.75..<1.0:
+            rewardLabel.text = "Reward almost Unlocked!"
+            rewardButton.backgroundColor = UIColor(hexFromString: "#BBBBBB")
+        case 1.0:
+            rewardLabel.text = "Reward Unlocked!"
+            rewardButton.backgroundColor = UIColor(hexFromString: "#003D61")
+            rewardButton.isEnabled = true
+        default:
+            rewardLabel.text = "To unlock the reword adopt a JellyBot!"
+            rewardButton.backgroundColor = UIColor(hexFromString: "#BBBBBB")
+            rewardButton.isEnabled = false
+        }
     }
-
-
 }
 
 extension ProgressViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

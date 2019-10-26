@@ -14,4 +14,8 @@ class ItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var itemLabel: UILabel!
     @IBOutlet weak var itemNumberLabel: UILabel!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
 }
