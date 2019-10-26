@@ -21,6 +21,17 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert]) {
+            (granted, error) in
+            if granted {
+                print("yes")
+            } else {
+                print("no")
+                
+            }
+            
+        }
         // Do any additional setup after loading the view.
         self.view.layoutIfNeeded()
         

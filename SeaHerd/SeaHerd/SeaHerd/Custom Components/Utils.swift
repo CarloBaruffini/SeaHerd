@@ -9,6 +9,19 @@
 import Foundation
 import MapKit
 
+/*** The following method shows a predefined alert
+        The only argument of the method is the ViewController where the alert will be displayed
+            Bye bye!
+    vc : UIViewController - the VC where you want to display the alert
+ */
+public func showAlert(vc : UIViewController){
+    let alert = UIAlertController(title: "Do you know?", message: "The Great Pacific Garbage Patch is 3 times the area of France!.", preferredStyle: .alert)
+
+               alert.addAction(UIAlertAction(title: "Wow!", style: .default, handler: nil))
+
+               vc.present(alert, animated: true)
+}
+
 //NSXMLParserDelegate needed for parsing the gpx files and NSObject is needed by NSXMLParserDelegate
 class TrackDrawer: NSObject, XMLParserDelegate {
     //All filenames will be checked and if found and if it's a gpx file it will generate a polygon
@@ -71,5 +84,15 @@ class TrackDrawer: NSObject, XMLParserDelegate {
 
             boundaries.append(CLLocationCoordinate2DMake(CLLocationDegrees(lat)!, CLLocationDegrees(lon)!))
         }
+    }
+}
+
+extension UIView {
+    /// Allows to round only the specified corners
+    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
     }
 }
