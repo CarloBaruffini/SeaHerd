@@ -52,7 +52,8 @@
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tLs-PP-eyL">
                                 <rect key="frame" x="0.0" y="192.5" width="414" height="460.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.23921568630000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="bXl-X8-9uK">
                                     <size key="itemSize" width="195" height="195"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -154,8 +155,8 @@
                             <constraint firstItem="miD-ex-iji" firstAttribute="centerX" secondItem="ZOk-dv-JEI" secondAttribute="centerX" id="kSo-7N-Zv6"/>
                             <constraint firstItem="ADs-zp-IKN" firstAttribute="top" secondItem="6V7-as-QOL" secondAttribute="top" id="mrg-j2-7LZ"/>
                             <constraint firstItem="miD-ex-iji" firstAttribute="top" secondItem="93F-tO-7l3" secondAttribute="bottom" constant="12" id="obr-AW-3h6"/>
-                            <constraint firstItem="tLs-PP-eyL" firstAttribute="leading" secondItem="6V7-as-QOL" secondAttribute="leading" id="sLG-f3-RUl"/>
-                            <constraint firstItem="tLs-PP-eyL" firstAttribute="trailing" secondItem="6V7-as-QOL" secondAttribute="trailing" id="wuj-su-sLg"/>
+                            <constraint firstItem="tLs-PP-eyL" firstAttribute="leading" secondItem="ZOk-dv-JEI" secondAttribute="leading" id="sLG-f3-RUl"/>
+                            <constraint firstItem="tLs-PP-eyL" firstAttribute="trailing" secondItem="ZOk-dv-JEI" secondAttribute="trailing" id="wuj-su-sLg"/>
                             <constraint firstItem="ADs-zp-IKN" firstAttribute="height" secondItem="ZOk-dv-JEI" secondAttribute="height" multiplier="0.25" id="zgE-jM-aJ0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZOk-dv-JEI"/>

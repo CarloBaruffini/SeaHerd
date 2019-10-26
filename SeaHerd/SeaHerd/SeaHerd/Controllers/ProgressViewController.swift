@@ -34,18 +34,9 @@ class ProgressViewController: UIViewController {
         sinceLabel.text = "since \(result)"
         
         self.rewardButton.layer.cornerRadius = 8
+        
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -59,7 +50,12 @@ extension ProgressViewController: UICollectionViewDataSource, UICollectionViewDe
         cell.itemLabel.text = items[indexPath.row]
         cell.itemImageView.image = UIImage(named: items[indexPath.row])
         cell.itemNumberLabel.text = itemsNumber[indexPath.row]
-        //cell.layer.cornerRadius = 12
+        if (indexPath.row == 0) {
+            cell.roundCorners(corners: [.topLeft], radius: 8)
+        } else if (indexPath.row == 1) {
+            cell.roundCorners(corners: [.topRight], radius: 8)
+        }
+        
         return cell
     }
     
