@@ -59,11 +59,11 @@ extension ProgressViewController: UICollectionViewDataSource, UICollectionViewDe
         cell.itemLabel.text = items[indexPath.row]
         cell.itemImageView.image = UIImage(named: items[indexPath.row])
         cell.itemNumberLabel.text = itemsNumber[indexPath.row]
-        cell.layer.cornerRadius = 12
+        //cell.layer.cornerRadius = 12
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (self.collectionView.frame.size.width / 2 - 20), height: (self.collectionView.frame.size.height / 2 - 20))
+        return CGSize(width: (self.collectionView.frame.size.width / 2), height: (self.collectionView.frame.size.height / 2))
     }
 }
