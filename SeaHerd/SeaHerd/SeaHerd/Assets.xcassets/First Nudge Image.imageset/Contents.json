@@ -2,23 +2,22 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "1.pdf",
+      "filename" : "First Nudge Image.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "First Nudge Image@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "First Nudge Image@3x.png",
       "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
     "author" : "xcode"
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }

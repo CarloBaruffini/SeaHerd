@@ -15,77 +15,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b2m-JS-041" userLabel="NudgeTextView">
-                                <rect key="frame" x="16" y="64" width="382" height="192.5"/>
-                                <color key="backgroundColor" red="0.87843137250000003" green="0.92156862750000001" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OperationTimeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpO-pu-fcX">
+                                <rect key="frame" x="58" y="279" width="202" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LocationLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPx-8z-CmA">
+                                <rect key="frame" x="58" y="326" width="202" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TimeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1s9-r9-wIh" userLabel="TimeIcon">
+                                <rect key="frame" x="20" y="275" width="30" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LocationPinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Zld-wV-9MN" userLabel="LocationPinIcon">
+                                <rect key="frame" x="20" y="318" width="30" height="42.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sdg-BI-QrV" userLabel="Title View">
+                                <rect key="frame" x="-2" y="0.0" width="416" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="oq7-dV-VM8" userLabel="Logo Image View">
+                                        <rect key="frame" x="280" y="59" width="81" height="123"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JellyBot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKm-iV-s9E">
+                                        <rect key="frame" x="25" y="116" width="303.5" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wOb-N9-i5B" userLabel="Background Image View">
+                                        <rect key="frame" x="140" y="0.0" width="235" height="218"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGE-VQ-p9o">
+                                        <rect key="frame" x="25" y="159" width="383" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Oceans don’t belong only to
+those who live in them.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.2392156869" blue="0.38039216399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jW9-Hj-ifw">
+                                <rect key="frame" x="-10" y="428" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VMN-Ga-lA5">
+                                <rect key="frame" x="174" y="417" width="234" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OperationTimeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpO-pu-fcX">
-                                <rect key="frame" x="68" y="276.5" width="192" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPx-8z-CmA">
-                                <rect key="frame" x="68" y="323.5" width="134.5" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1s9-r9-wIh" userLabel="TimeIcon">
-                                <rect key="frame" x="16" y="272.5" width="30" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="B6I-LU-IEh"/>
-                                    <constraint firstAttribute="width" secondItem="1s9-r9-wIh" secondAttribute="height" multiplier="6:7" id="QDV-SH-FdV"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-W1-gMD" userLabel="Second Nudge Text View">
+                                <rect key="frame" x="20" y="625" width="223" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JellyPin" translatesAutoresizingMaskIntoConstraints="NO" id="YqP-20-xNC">
+                                <rect key="frame" x="258" y="226" width="136" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationPinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Zld-wV-9MN" userLabel="LocationPinIcon">
-                                <rect key="frame" x="16" y="315.5" width="30" height="42.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="K3Q-7a-Nh4"/>
-                                    <constraint firstAttribute="width" secondItem="Zld-wV-9MN" secondAttribute="height" multiplier="26:37" id="YnT-w3-NkW"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sea" translatesAutoresizingMaskIntoConstraints="NO" id="SOK-7T-ACg" userLabel="BackgroundImageView">
-                                <rect key="frame" x="0.0" y="467" width="414" height="346"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="h7m-yD-cKe" userLabel="JellyImageView">
-                                <rect key="frame" x="138" y="536" width="138" height="208"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="h7m-yD-cKe" secondAttribute="height" multiplier="2:3" id="Obu-tZ-ItR"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXJ-AS-UbQ">
+                                <rect key="frame" x="251" y="625" width="176" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.77647058820000003" green="0.83529411760000005" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="b2m-JS-041" firstAttribute="top" secondItem="ZMq-Yp-jw5" secondAttribute="top" constant="20" id="0S3-gb-niC"/>
-                            <constraint firstItem="bPx-8z-CmA" firstAttribute="centerY" secondItem="Zld-wV-9MN" secondAttribute="centerY" id="8xs-Ii-NEx"/>
-                            <constraint firstItem="Zld-wV-9MN" firstAttribute="leading" secondItem="b2m-JS-041" secondAttribute="leading" id="EIf-LL-k7K"/>
-                            <constraint firstItem="1s9-r9-wIh" firstAttribute="top" secondItem="b2m-JS-041" secondAttribute="bottom" constant="16" id="KNG-CS-xCT"/>
-                            <constraint firstItem="b2m-JS-041" firstAttribute="leading" secondItem="ZMq-Yp-jw5" secondAttribute="leading" constant="16" id="Lb6-st-3OA"/>
-                            <constraint firstItem="SOK-7T-ACg" firstAttribute="trailing" secondItem="ZMq-Yp-jw5" secondAttribute="trailing" id="U4Z-NE-26o"/>
-                            <constraint firstItem="Zld-wV-9MN" firstAttribute="top" secondItem="1s9-r9-wIh" secondAttribute="bottom" constant="8" id="Z2q-pX-8Pu"/>
-                            <constraint firstItem="SOK-7T-ACg" firstAttribute="leading" secondItem="ZMq-Yp-jw5" secondAttribute="leading" id="cLD-Fs-FWl"/>
-                            <constraint firstItem="bPx-8z-CmA" firstAttribute="leading" secondItem="Zld-wV-9MN" secondAttribute="trailing" constant="22" id="lJE-qR-Uz5"/>
-                            <constraint firstItem="h7m-yD-cKe" firstAttribute="centerX" secondItem="ZMq-Yp-jw5" secondAttribute="centerX" id="m7t-28-3yh"/>
-                            <constraint firstItem="HpO-pu-fcX" firstAttribute="leading" secondItem="1s9-r9-wIh" secondAttribute="trailing" constant="22" id="mmc-ZI-Sf5"/>
-                            <constraint firstItem="1s9-r9-wIh" firstAttribute="leading" secondItem="b2m-JS-041" secondAttribute="leading" id="nqk-Ah-4Az"/>
-                            <constraint firstItem="SOK-7T-ACg" firstAttribute="bottom" secondItem="ZMq-Yp-jw5" secondAttribute="bottom" id="pM5-We-SiE"/>
-                            <constraint firstItem="SOK-7T-ACg" firstAttribute="height" secondItem="ZMq-Yp-jw5" secondAttribute="height" multiplier="0.45" id="qCd-lz-Ono"/>
-                            <constraint firstItem="ZMq-Yp-jw5" firstAttribute="trailing" secondItem="b2m-JS-041" secondAttribute="trailing" constant="16" id="tnr-dm-RxN"/>
-                            <constraint firstItem="b2m-JS-041" firstAttribute="height" secondItem="ZMq-Yp-jw5" secondAttribute="height" multiplier="0.25" id="w86-wj-5eq"/>
-                            <constraint firstItem="h7m-yD-cKe" firstAttribute="centerY" secondItem="SOK-7T-ACg" secondAttribute="centerY" id="wDy-Of-LAl"/>
-                            <constraint firstItem="HpO-pu-fcX" firstAttribute="centerY" secondItem="1s9-r9-wIh" secondAttribute="centerY" id="wTt-fv-8ah"/>
-                            <constraint firstItem="h7m-yD-cKe" firstAttribute="height" secondItem="SOK-7T-ACg" secondAttribute="height" multiplier="0.6" id="z8U-xb-0zp"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZMq-Yp-jw5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Stats" image="chart.pie" catalog="system" selectedImage="chart.pie.fill" id="hQk-JR-kIu">
@@ -93,10 +108,13 @@
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="jellyImageView" destination="h7m-yD-cKe" id="CJ7-06-IYd"/>
+                        <outlet property="firstNudgeImageView" destination="jW9-Hj-ifw" id="Px3-uN-qYa"/>
+                        <outlet property="firstNudgeTextView" destination="VMN-Ga-lA5" id="SwJ-ZE-YDK"/>
+                        <outlet property="jellyImageView" destination="YqP-20-xNC" id="zub-ia-O1N"/>
                         <outlet property="locationLabel" destination="bPx-8z-CmA" id="5FP-AN-YoJ"/>
-                        <outlet property="nudgeTextView" destination="b2m-JS-041" id="8G1-gX-97M"/>
                         <outlet property="operationTimeLabel" destination="HpO-pu-fcX" id="92q-xU-bON"/>
+                        <outlet property="secondNudgeImageView" destination="JXJ-AS-UbQ" id="yFP-1f-Up1"/>
+                        <outlet property="secondNudgeTextView" destination="YbW-W1-gMD" id="CGH-cF-zfs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouM-3U-VN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -106,8 +124,8 @@
     </scenes>
     <resources>
         <image name="JB Logo" width="627" height="854"/>
+        <image name="JellyPin" width="1127" height="1127"/>
         <image name="LocationPinIcon" width="26" height="37"/>
-        <image name="Sea" width="414" height="427"/>
         <image name="TimeIcon" width="30" height="35"/>
         <image name="chart.pie" catalog="system" width="64" height="60"/>
         <image name="chart.pie.fill" catalog="system" width="64" height="62"/>

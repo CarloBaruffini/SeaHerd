@@ -11,13 +11,19 @@ import MapKit
 
 class StatsViewController: UIViewController {
 
-    @IBOutlet weak var nudgeTextView: UITextView!
+    @IBOutlet weak var firstNudgeTextView: UITextView!
+    @IBOutlet weak var firstNudgeImageView: UIImageView!
+    @IBOutlet weak var secondNudgeTextView: UITextView!
+    @IBOutlet weak var secondNudgeImageView: UIImageView!
     @IBOutlet weak var operationTimeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var jellyImageView: UIImageView!
     
-    var operationTime: Int = 0
-    var initialPos: CGFloat = 0
+    private var operationTime: Int = 0
+    private var initialPos: CGFloat = 0
+    private var nudges = ["Did you know it takes from 10 to 30 years to decompose a Plastic Bag in the sea?", "We ingest microplastic in the equivalent of 20 water bottle per year?"]
+    private var nudgesImages = ["First Nudge Image","Second Nudge Image"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +40,10 @@ class StatsViewController: UIViewController {
             self.operationTime = self.operationTime + Int(timer.timeInterval)
             self.updateOperationTime(seconds: self.operationTime)
         }
+        firstNudgeTextView.text = nudges[0]
+        firstNudgeImageView.image = UIImage(named: nudgesImages[0])
+        secondNudgeTextView.text = nudges[1]
+        secondNudgeImageView.image = UIImage(named: nudgesImages[1])
         self.initialPos = jellyImageView.frame.origin.y
     }
     
