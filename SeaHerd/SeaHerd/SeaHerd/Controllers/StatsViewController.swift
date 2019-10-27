@@ -13,11 +13,6 @@ class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     
     @IBOutlet weak var tipsTableView: UITableView!
-    
-//    @IBOutlet weak var firstNudgeTextView: UITextView!
-//    @IBOutlet weak var firstNudgeImageView: UIImageView!
-//    @IBOutlet weak var secondNudgeTextView: UITextView!
-//    @IBOutlet weak var secondNudgeImageView: UIImageView!
     @IBOutlet weak var myJellyBotView: UIView!
     @IBOutlet weak var operationTimeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -29,12 +24,15 @@ class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     private var operationTime: Int = 0
     private var initialPos: CGFloat = 0
-    private var nudges = ["Did you know it takes from 10 to 30 years to decompose a Plastic Bag in the sea?", "We ingest 250 gr of microplastic per year! It's the equivalent of 20 water bottle!"]
-    private var nudgesImages = ["cloudshop","cloud_full2"]
+    private var nudges = ["Did you know it takes from 10 to 30 years to decompose a Plastic Bag in the sea?",
+                          "We ingest 250 gr of microplastic per year! It's the equivalent of 20 water bottle!"]
+    private var nudgesImages = ["cloudshop",
+                                "cloud_full2"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let mapArea = MapArea(filename: "PacificOcean")
         let location = mapArea.midCoordinate
         lookUpCurrentLocation(location: location) { (placemark) in
@@ -49,10 +47,7 @@ class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.operationTime = self.operationTime + Int(timer.timeInterval)
             self.updateOperationTime(seconds: self.operationTime)
         }
-//        firstNudgeTextView.text = nudges[0]
-//        firstNudgeImageView.image = UIImage(named: nudgesImages[0])
-//        secondNudgeTextView.text = nudges[1]
-//        secondNudgeImageView.image = UIImage(named: nudgesImages[1])
+
         initialPos = jellyImageView.frame.origin.y
         jellybotNameLabel.text = "JB-12E4GE"
         adoptJellyBotButton.layer.cornerRadius = 8
@@ -84,20 +79,18 @@ class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 if error == nil {
                     let firstLocation = placemarks?[0]
                     completionHandler(firstLocation)
-                }
-                else {
+                } else {
                  // An error occurred during geocoding.
                     completionHandler(nil)
                 }
             })
-        }
-        else {
+        } else {
             // No location was available.
             completionHandler(nil)
         }
     }
 
-    private func updateOperationTime(seconds: Int){
+    private func updateOperationTime(seconds: Int) {
         DispatchQueue.main.async {
             self.operationTimeLabel.text = self.secondsToDayHoursMinutesSeconds(seconds: seconds)
         }
@@ -111,15 +104,6 @@ class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         adoptJellyBotView.isHidden = true
         myJellyBotView.isHidden = false
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2

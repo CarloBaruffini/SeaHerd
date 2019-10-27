@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xmk-GW-7KT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xmk-GW-7KT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -50,7 +50,9 @@ Jellybots</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="89m-ku-pHS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="mappin.circle" catalog="system" selectedImage="mappin.circle.fill" id="DIL-Wd-x7X"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="mappin.and.ellipse" catalog="system" selectedImage="mappin.and.ellipse" id="DIL-Wd-x7X">
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="Dr5-Gh-nFL" id="Izl-bO-vnk"/>
@@ -63,8 +65,7 @@ Jellybots</string>
         </scene>
     </scenes>
     <resources>
-        <image name="mappin.circle" catalog="system" width="64" height="60"/>
-        <image name="mappin.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="mappin.and.ellipse" catalog="system" width="62" height="64"/>
     </resources>
     <color key="tintColor" red="0.01408207975" green="0.23586386440000001" blue="0.38040888309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

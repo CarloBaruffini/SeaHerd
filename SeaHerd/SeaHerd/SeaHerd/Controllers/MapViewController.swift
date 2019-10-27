@@ -19,9 +19,14 @@ class MapViewController: UIViewController {
     /// Defines the ocean area shown in the map
     let jellyArea = MapArea(filename: "PacificOcean")
     
-    var jelliesName = ["JB-12E5HU","JB-129UY6","JB-26HU8E","JB-02O9P8"]
+    /// Defines the names of the jellybot shown in the ocean
+    var jelliesName = ["JB-12E5HU",
+                       "JB-129UY6",
+                       "JB-26HU8E",
+                       "JB-02O9P8"]
     
     override func viewDidLoad() {
+        
         // Set the controller as delegate of the mapview
         self.mapView.delegate = self
         
