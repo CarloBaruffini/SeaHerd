@@ -22,10 +22,9 @@
                                 <rect key="frame" x="103.5" y="373" width="207" height="160"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIe-KX-Std">
-                                <rect key="frame" x="103.5" y="413.5" width="207" height="79"/>
-                                <string key="text">The Pacific
-Ocean needs
-your help!</string>
+                                <rect key="frame" x="103.5" y="426.5" width="207" height="53"/>
+                                <string key="text">The Pacific Ocean
+needs your help!</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.23921568630000001" blue="0.3803921569" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -204,9 +203,10 @@ your help!</string>
                                 <rect key="frame" x="90" y="373" width="234" height="160"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkK-oh-3vL">
-                                <rect key="frame" x="90" y="426.5" width="234" height="53"/>
-                                <string key="text">Polluting and 
-killing the sea</string>
+                                <rect key="frame" x="90" y="413.5" width="234" height="79"/>
+                                <string key="text">Polluting the sea 
+and killing
+the sea life</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.23921568630000001" blue="0.3803921569" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -254,12 +254,20 @@ an impact!</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1O-jz-w2E">
-                                <rect key="frame" x="83" y="769" width="248" height="39"/>
+                                <rect key="frame" x="83" y="738" width="248" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.23921568630000001" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ugo-74-Jdq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Let's start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="vtc-LD-Qso" kind="presentation" modalPresentationStyle="fullScreen" id="n7c-Bj-sUc"/>
                                 </connections>
@@ -273,7 +281,7 @@ an impact!</string>
                             <constraint firstAttribute="bottom" secondItem="zib-my-Zgh" secondAttribute="bottom" id="C5G-2S-2Y5"/>
                             <constraint firstItem="4OY-2U-Z1p" firstAttribute="centerY" secondItem="8HK-wh-Eyi" secondAttribute="centerY" id="PDg-OV-1I2"/>
                             <constraint firstItem="a1O-jz-w2E" firstAttribute="centerX" secondItem="8HK-wh-Eyi" secondAttribute="centerX" id="TKc-wE-AvT"/>
-                            <constraint firstItem="8HK-wh-Eyi" firstAttribute="bottom" secondItem="a1O-jz-w2E" secondAttribute="bottom" constant="54" id="WI7-TC-lsD"/>
+                            <constraint firstItem="8HK-wh-Eyi" firstAttribute="bottom" secondItem="a1O-jz-w2E" secondAttribute="bottom" constant="74" id="WI7-TC-lsD"/>
                             <constraint firstItem="4C4-oQ-Hm5" firstAttribute="centerY" secondItem="8HK-wh-Eyi" secondAttribute="centerY" id="duZ-ru-mYM"/>
                             <constraint firstItem="4OY-2U-Z1p" firstAttribute="trailing" secondItem="4C4-oQ-Hm5" secondAttribute="trailing" id="iYs-P5-Ouy"/>
                             <constraint firstItem="8HK-wh-Eyi" firstAttribute="trailing" secondItem="zib-my-Zgh" secondAttribute="trailing" id="jQo-LH-ac6"/>
