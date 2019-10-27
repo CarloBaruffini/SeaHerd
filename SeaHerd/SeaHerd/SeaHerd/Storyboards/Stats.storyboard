@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VMy-Ry-RLv">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VMy-Ry-RLv">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,29 +12,29 @@
             <objects>
                 <viewController id="VMy-Ry-RLv" customClass="StatsViewController" customModule="SeaHerd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="14r-ko-IqQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sdg-BI-QrV" userLabel="Title View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="192.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="oq7-dV-VM8" userLabel="Logo Image View">
-                                        <rect key="frame" x="280" y="59" width="81" height="96"/>
+                                        <rect key="frame" x="257" y="59" width="65" height="77.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JellyBot" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKm-iV-s9E">
-                                        <rect key="frame" x="25" y="75" width="128.5" height="42"/>
+                                        <rect key="frame" x="25" y="56.5" width="128.5" height="42"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JB Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wOb-N9-i5B" userLabel="Background Image View">
-                                        <rect key="frame" x="168" y="0.0" width="207" height="192.5"/>
+                                        <rect key="frame" x="169.5" y="0.0" width="166.5" height="154.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="wOb-N9-i5B" secondAttribute="height" multiplier="235:218" id="Qtf-un-Jsd"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGE-VQ-p9o">
-                                        <rect key="frame" x="25" y="124" width="204" height="38.5"/>
+                                        <rect key="frame" x="25" y="105.5" width="204" height="38.5"/>
                                         <string key="text">Oceans don’t belong only to
 those who live in them.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -59,16 +59,16 @@ those who live in them.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54E-th-LgQ" userLabel="Adopt a JellyBot View">
-                                <rect key="frame" x="0.0" y="192.5" width="414" height="195.5"/>
+                                <rect key="frame" x="0.0" y="154.5" width="375" height="197"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help making an impact!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBk-WJ-tB4">
-                                        <rect key="frame" x="20" y="8" width="374" height="102"/>
+                                        <rect key="frame" x="20" y="8" width="335" height="103.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="42"/>
                                         <color key="textColor" red="0.01408207975" green="0.23586386440000001" blue="0.38040888309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-do-itv">
-                                        <rect key="frame" x="62" y="118.5" width="290" height="69"/>
+                                        <rect key="frame" x="56.5" y="120" width="262.5" height="69"/>
                                         <color key="backgroundColor" red="0.0" green="0.23921568630000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="69" id="wxv-1P-gKy"/>
@@ -95,65 +95,64 @@ those who live in them.</string>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPM-Ij-jRT" userLabel="My JellyBot View">
-                                <rect key="frame" x="0.0" y="192.5" width="414" height="195.5"/>
+                                <rect key="frame" x="0.0" y="154.5" width="375" height="197"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My JellyBot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I3-g2-C5A">
-                                        <rect key="frame" x="25" y="12" width="185" height="61.5"/>
+                                        <rect key="frame" x="25" y="10" width="185" height="65"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                         <color key="textColor" red="0.01408207975" green="0.23586386440000001" blue="0.38040888309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JellyBot Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zu1-rI-zgc" userLabel="JellyBot Name Label">
-                                        <rect key="frame" x="274" y="32" width="122" height="21.5"/>
+                                        <rect key="frame" x="235" y="32" width="122" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <color key="textColor" red="0.01408207975" green="0.23586386440000001" blue="0.38040888309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JellyBot" translatesAutoresizingMaskIntoConstraints="NO" id="YqP-20-xNC">
-                                        <rect key="frame" x="16" y="83.5" width="73.5" height="100"/>
+                                        <rect key="frame" x="16" y="87" width="73.5" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="YqP-20-xNC" secondAttribute="height" multiplier="101:137" id="9tO-JF-fTT"/>
                                             <constraint firstAttribute="height" constant="100" id="Wpo-bH-pRQ"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1s9-r9-wIh" userLabel="TimeIcon">
-                                        <rect key="frame" x="113.5" y="145" width="36.5" height="42.5"/>
+                                        <rect key="frame" x="122" y="146.5" width="36.5" height="42.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1s9-r9-wIh" secondAttribute="height" multiplier="6:7" id="H8o-Lf-o3J"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OperationTimeLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpO-pu-fcX">
-                                        <rect key="frame" x="158" y="152.5" width="248" height="27"/>
+                                        <rect key="frame" x="166.5" y="154.5" width="200.5" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationPinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Zld-wV-9MN" userLabel="LocationPinIcon">
-                                        <rect key="frame" x="113.5" y="84" width="30.5" height="42.5"/>
+                                        <rect key="frame" x="122" y="85.5" width="30.5" height="42.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42.5" id="Nx7-AZ-M4w"/>
                                             <constraint firstAttribute="width" secondItem="Zld-wV-9MN" secondAttribute="height" multiplier="5:7" id="Tfa-EJ-Kj4"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationLabel" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPx-8z-CmA">
-                                        <rect key="frame" x="158" y="91.5" width="248" height="27.5"/>
+                                        <rect key="frame" x="166.5" y="93" width="200.5" height="27.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinate Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h5-Dk-nv8" userLabel="CoordinateLabel">
-                                        <rect key="frame" x="294.5" y="123" width="115.5" height="18"/>
+                                        <rect key="frame" x="251.5" y="124.5" width="115.5" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <color key="textColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="1s9-r9-wIh" firstAttribute="leading" secondItem="Zld-wV-9MN" secondAttribute="leading" id="1HA-vX-YUm"/>
                                     <constraint firstItem="HpO-pu-fcX" firstAttribute="leading" secondItem="1s9-r9-wIh" secondAttribute="trailing" constant="8" id="6fQ-TU-3DR"/>
                                     <constraint firstItem="1s9-r9-wIh" firstAttribute="height" secondItem="Zld-wV-9MN" secondAttribute="height" id="7UW-Am-EWQ"/>
-                                    <constraint firstItem="Zld-wV-9MN" firstAttribute="leading" secondItem="YqP-20-xNC" secondAttribute="trailing" constant="24" id="7g7-Gz-r7k"/>
                                     <constraint firstItem="8h5-Dk-nv8" firstAttribute="top" secondItem="bPx-8z-CmA" secondAttribute="bottom" constant="4" id="Jhm-iF-jZu"/>
                                     <constraint firstItem="bPx-8z-CmA" firstAttribute="leading" secondItem="HpO-pu-fcX" secondAttribute="leading" id="M4E-ek-mcN"/>
                                     <constraint firstAttribute="trailing" secondItem="zu1-rI-zgc" secondAttribute="trailing" constant="18" id="M7N-TV-b12"/>
@@ -163,21 +162,21 @@ those who live in them.</string>
                                     <constraint firstItem="bPx-8z-CmA" firstAttribute="centerY" secondItem="Zld-wV-9MN" secondAttribute="centerY" id="XXi-nR-EHo"/>
                                     <constraint firstAttribute="trailing" secondItem="bPx-8z-CmA" secondAttribute="trailing" constant="8" id="Zgp-sv-qVe"/>
                                     <constraint firstItem="zu1-rI-zgc" firstAttribute="top" secondItem="mPM-Ij-jRT" secondAttribute="top" constant="32" id="c1X-b3-anE"/>
-                                    <constraint firstItem="1I3-g2-C5A" firstAttribute="top" secondItem="mPM-Ij-jRT" secondAttribute="top" constant="12" id="iSa-8D-IqD"/>
-                                    <constraint firstAttribute="trailing" secondItem="8h5-Dk-nv8" secondAttribute="trailing" constant="4" id="j6T-bW-rYn"/>
+                                    <constraint firstItem="1I3-g2-C5A" firstAttribute="top" secondItem="mPM-Ij-jRT" secondAttribute="top" constant="10" id="iSa-8D-IqD"/>
+                                    <constraint firstAttribute="trailing" secondItem="8h5-Dk-nv8" secondAttribute="trailing" constant="8" id="j6T-bW-rYn"/>
                                     <constraint firstItem="Zld-wV-9MN" firstAttribute="top" secondItem="1I3-g2-C5A" secondAttribute="bottom" constant="10.5" id="jjd-Ku-ckv"/>
                                     <constraint firstItem="zu1-rI-zgc" firstAttribute="centerY" secondItem="1I3-g2-C5A" secondAttribute="centerY" id="ksC-V9-h8n"/>
                                     <constraint firstItem="HpO-pu-fcX" firstAttribute="centerY" secondItem="1s9-r9-wIh" secondAttribute="centerY" id="p8i-DH-9Pg"/>
                                     <constraint firstItem="1s9-r9-wIh" firstAttribute="top" secondItem="8h5-Dk-nv8" secondAttribute="bottom" constant="4" id="pLL-fh-zp0"/>
                                     <constraint firstItem="HpO-pu-fcX" firstAttribute="trailing" secondItem="bPx-8z-CmA" secondAttribute="trailing" id="qiz-gQ-GPf"/>
-                                    <constraint firstItem="YqP-20-xNC" firstAttribute="top" secondItem="1I3-g2-C5A" secondAttribute="bottom" constant="10" id="xHS-Bf-0Ll"/>
+                                    <constraint firstItem="YqP-20-xNC" firstAttribute="top" secondItem="1I3-g2-C5A" secondAttribute="bottom" constant="12" id="xHS-Bf-0Ll"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-Mv-fYe" userLabel="Fist Nudge View">
-                                <rect key="frame" x="0.0" y="388" width="414" height="165.5"/>
+                                <rect key="frame" x="0.0" y="351.5" width="375" height="150"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMN-Ga-lA5">
-                                        <rect key="frame" x="173.5" y="0.0" width="232.5" height="165.5"/>
+                                        <rect key="frame" x="158" y="0.0" width="209" height="150"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -185,7 +184,7 @@ those who live in them.</string>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jW9-Hj-ifw">
-                                        <rect key="frame" x="0.0" y="0.0" width="165.5" height="165.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="jW9-Hj-ifw" secondAttribute="height" multiplier="1:1" id="qU9-nT-1U4"/>
                                         </constraints>
@@ -204,10 +203,10 @@ those who live in them.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNF-Tm-lv9" userLabel="Second Nudge View">
-                                <rect key="frame" x="0.0" y="553.5" width="414" height="165.5"/>
+                                <rect key="frame" x="0.0" y="501.5" width="375" height="150"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-W1-gMD" userLabel="Second Nudge Text View">
-                                        <rect key="frame" x="8" y="0.0" width="232.5" height="165.5"/>
+                                        <rect key="frame" x="8" y="0.0" width="209" height="150"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -215,7 +214,7 @@ those who live in them.</string>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JXJ-AS-UbQ">
-                                        <rect key="frame" x="248.5" y="0.0" width="165.5" height="165.5"/>
+                                        <rect key="frame" x="225" y="0.0" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="JXJ-AS-UbQ" secondAttribute="height" multiplier="1:1" id="1tq-bN-5rz"/>
                                         </constraints>
@@ -285,7 +284,7 @@ those who live in them.</string>
         <image name="JellyBot" width="101" height="137"/>
         <image name="LocationPinIcon" width="26" height="37"/>
         <image name="TimeIcon" width="30" height="35"/>
-        <image name="chart.pie" catalog="system" width="64" height="60"/>
+        <image name="chart.pie" catalog="system" width="64" height="62"/>
         <image name="chart.pie.fill" catalog="system" width="64" height="62"/>
     </resources>
     <color key="tintColor" red="0.01408207975" green="0.23586386440000001" blue="0.38040888309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
