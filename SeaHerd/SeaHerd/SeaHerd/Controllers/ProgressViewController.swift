@@ -62,6 +62,14 @@ class ProgressViewController: UIViewController {
             rewardButton.backgroundColor = UIColor(hexFromString: "#BBBBBB")
             rewardButton.isEnabled = false
         }
+        
+        // Set the rounded edge for the outer bar
+        self.barProgressView.layer.cornerRadius = 4
+        self.barProgressView.clipsToBounds = true
+
+        // Set the rounded edge for the inner bar
+        self.barProgressView.layer.sublayers![1].cornerRadius = 4
+        self.barProgressView.subviews[1].clipsToBounds = true
     }
 }
 
