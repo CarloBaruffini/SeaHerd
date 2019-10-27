@@ -59,16 +59,16 @@ those who live in them.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54E-th-LgQ" userLabel="Adopt a JellyBot View">
-                                <rect key="frame" x="0.0" y="192.5" width="414" height="194"/>
+                                <rect key="frame" x="0.0" y="192.5" width="414" height="195.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help making an impact!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBk-WJ-tB4">
-                                        <rect key="frame" x="20" y="8" width="374" height="100.5"/>
+                                        <rect key="frame" x="20" y="8" width="374" height="102"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="42"/>
                                         <color key="textColor" red="0.01408207975" green="0.23586386440000001" blue="0.38040888309999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-do-itv">
-                                        <rect key="frame" x="62" y="117" width="290" height="69"/>
+                                        <rect key="frame" x="62" y="118.5" width="290" height="69"/>
                                         <color key="backgroundColor" red="0.0" green="0.23921568630000001" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="69" id="wxv-1P-gKy"/>
@@ -95,7 +95,7 @@ those who live in them.</string>
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPM-Ij-jRT" userLabel="My JellyBot View">
-                                <rect key="frame" x="0.0" y="192.5" width="414" height="194"/>
+                                <rect key="frame" x="0.0" y="192.5" width="414" height="195.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My JellyBot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1I3-g2-C5A">
                                         <rect key="frame" x="25" y="12" width="185" height="61.5"/>
@@ -117,32 +117,32 @@ those who live in them.</string>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TimeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1s9-r9-wIh" userLabel="TimeIcon">
-                                        <rect key="frame" x="97.5" y="134.5" width="36.5" height="42.5"/>
+                                        <rect key="frame" x="113.5" y="145" width="36.5" height="42.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1s9-r9-wIh" secondAttribute="height" multiplier="6:7" id="H8o-Lf-o3J"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OperationTimeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpO-pu-fcX">
-                                        <rect key="frame" x="142" y="142" width="264" height="27"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OperationTimeLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpO-pu-fcX">
+                                        <rect key="frame" x="158" y="152.5" width="248" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LocationPinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Zld-wV-9MN" userLabel="LocationPinIcon">
-                                        <rect key="frame" x="97.5" y="84" width="30.5" height="42.5"/>
+                                        <rect key="frame" x="113.5" y="84" width="30.5" height="42.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42.5" id="Nx7-AZ-M4w"/>
                                             <constraint firstAttribute="width" secondItem="Zld-wV-9MN" secondAttribute="height" multiplier="5:7" id="Tfa-EJ-Kj4"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPx-8z-CmA">
-                                        <rect key="frame" x="142" y="91.5" width="264" height="27.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationLabel" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPx-8z-CmA">
+                                        <rect key="frame" x="158" y="91.5" width="248" height="27.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coordinate Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8h5-Dk-nv8" userLabel="CoordinateLabel">
-                                        <rect key="frame" x="294.5" y="172" width="115.5" height="18"/>
+                                        <rect key="frame" x="294.5" y="123" width="115.5" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <color key="textColor" red="0.1647058824" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -151,14 +151,14 @@ those who live in them.</string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstItem="1s9-r9-wIh" firstAttribute="leading" secondItem="Zld-wV-9MN" secondAttribute="leading" id="1HA-vX-YUm"/>
-                                    <constraint firstAttribute="bottom" secondItem="8h5-Dk-nv8" secondAttribute="bottom" constant="4" id="2Rj-2l-gsj"/>
                                     <constraint firstItem="HpO-pu-fcX" firstAttribute="leading" secondItem="1s9-r9-wIh" secondAttribute="trailing" constant="8" id="6fQ-TU-3DR"/>
                                     <constraint firstItem="1s9-r9-wIh" firstAttribute="height" secondItem="Zld-wV-9MN" secondAttribute="height" id="7UW-Am-EWQ"/>
-                                    <constraint firstItem="Zld-wV-9MN" firstAttribute="leading" secondItem="YqP-20-xNC" secondAttribute="trailing" constant="8" id="7g7-Gz-r7k"/>
-                                    <constraint firstItem="1s9-r9-wIh" firstAttribute="top" secondItem="Zld-wV-9MN" secondAttribute="bottom" constant="8" id="KR1-Sw-BXc"/>
+                                    <constraint firstItem="Zld-wV-9MN" firstAttribute="leading" secondItem="YqP-20-xNC" secondAttribute="trailing" constant="24" id="7g7-Gz-r7k"/>
+                                    <constraint firstItem="8h5-Dk-nv8" firstAttribute="top" secondItem="bPx-8z-CmA" secondAttribute="bottom" constant="4" id="Jhm-iF-jZu"/>
                                     <constraint firstItem="bPx-8z-CmA" firstAttribute="leading" secondItem="HpO-pu-fcX" secondAttribute="leading" id="M4E-ek-mcN"/>
                                     <constraint firstAttribute="trailing" secondItem="zu1-rI-zgc" secondAttribute="trailing" constant="18" id="M7N-TV-b12"/>
                                     <constraint firstItem="1I3-g2-C5A" firstAttribute="leading" secondItem="mPM-Ij-jRT" secondAttribute="leading" constant="25" id="P9O-eL-dtM"/>
+                                    <constraint firstAttribute="bottom" secondItem="1s9-r9-wIh" secondAttribute="bottom" constant="8" id="Rne-Gx-LV1"/>
                                     <constraint firstItem="YqP-20-xNC" firstAttribute="leading" secondItem="mPM-Ij-jRT" secondAttribute="leading" constant="16" id="SfC-S2-q5f"/>
                                     <constraint firstItem="bPx-8z-CmA" firstAttribute="centerY" secondItem="Zld-wV-9MN" secondAttribute="centerY" id="XXi-nR-EHo"/>
                                     <constraint firstAttribute="trailing" secondItem="bPx-8z-CmA" secondAttribute="trailing" constant="8" id="Zgp-sv-qVe"/>
@@ -168,12 +168,13 @@ those who live in them.</string>
                                     <constraint firstItem="Zld-wV-9MN" firstAttribute="top" secondItem="1I3-g2-C5A" secondAttribute="bottom" constant="10.5" id="jjd-Ku-ckv"/>
                                     <constraint firstItem="zu1-rI-zgc" firstAttribute="centerY" secondItem="1I3-g2-C5A" secondAttribute="centerY" id="ksC-V9-h8n"/>
                                     <constraint firstItem="HpO-pu-fcX" firstAttribute="centerY" secondItem="1s9-r9-wIh" secondAttribute="centerY" id="p8i-DH-9Pg"/>
+                                    <constraint firstItem="1s9-r9-wIh" firstAttribute="top" secondItem="8h5-Dk-nv8" secondAttribute="bottom" constant="4" id="pLL-fh-zp0"/>
                                     <constraint firstItem="HpO-pu-fcX" firstAttribute="trailing" secondItem="bPx-8z-CmA" secondAttribute="trailing" id="qiz-gQ-GPf"/>
                                     <constraint firstItem="YqP-20-xNC" firstAttribute="top" secondItem="1I3-g2-C5A" secondAttribute="bottom" constant="10" id="xHS-Bf-0Ll"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-Mv-fYe" userLabel="Fist Nudge View">
-                                <rect key="frame" x="0.0" y="386.5" width="414" height="165.5"/>
+                                <rect key="frame" x="0.0" y="388" width="414" height="165.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMN-Ga-lA5">
                                         <rect key="frame" x="173.5" y="0.0" width="232.5" height="165.5"/>
@@ -183,7 +184,7 @@ those who live in them.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jW9-Hj-ifw">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jW9-Hj-ifw">
                                         <rect key="frame" x="0.0" y="0.0" width="165.5" height="165.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="jW9-Hj-ifw" secondAttribute="height" multiplier="1:1" id="qU9-nT-1U4"/>
@@ -203,7 +204,7 @@ those who live in them.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNF-Tm-lv9" userLabel="Second Nudge View">
-                                <rect key="frame" x="0.0" y="552" width="414" height="165.5"/>
+                                <rect key="frame" x="0.0" y="553.5" width="414" height="165.5"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-W1-gMD" userLabel="Second Nudge Text View">
                                         <rect key="frame" x="8" y="0.0" width="232.5" height="165.5"/>
@@ -213,7 +214,7 @@ those who live in them.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JXJ-AS-UbQ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JXJ-AS-UbQ">
                                         <rect key="frame" x="248.5" y="0.0" width="165.5" height="165.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="JXJ-AS-UbQ" secondAttribute="height" multiplier="1:1" id="1tq-bN-5rz"/>
@@ -239,13 +240,13 @@ those who live in them.</string>
                             <constraint firstItem="mPM-Ij-jRT" firstAttribute="top" secondItem="Sdg-BI-QrV" secondAttribute="bottom" id="5Pl-db-rRA"/>
                             <constraint firstItem="Sdg-BI-QrV" firstAttribute="leading" secondItem="14r-ko-IqQ" secondAttribute="leading" id="6wf-Tz-dzg"/>
                             <constraint firstItem="mPM-Ij-jRT" firstAttribute="leading" secondItem="ZMq-Yp-jw5" secondAttribute="leading" id="AfY-Mk-xby"/>
-                            <constraint firstItem="mPM-Ij-jRT" firstAttribute="height" secondItem="54E-th-LgQ" secondAttribute="height" id="HOf-FJ-9da"/>
                             <constraint firstItem="bbC-Mv-fYe" firstAttribute="top" secondItem="54E-th-LgQ" secondAttribute="bottom" id="L0d-IW-hPw"/>
                             <constraint firstItem="mPM-Ij-jRT" firstAttribute="trailing" secondItem="ZMq-Yp-jw5" secondAttribute="trailing" id="OdC-U7-3xV"/>
                             <constraint firstItem="Sdg-BI-QrV" firstAttribute="top" secondItem="14r-ko-IqQ" secondAttribute="top" id="Owj-Gn-jAw"/>
                             <constraint firstItem="54E-th-LgQ" firstAttribute="top" secondItem="Sdg-BI-QrV" secondAttribute="bottom" id="WSH-AS-mhf"/>
                             <constraint firstItem="Sdg-BI-QrV" firstAttribute="height" secondItem="ZMq-Yp-jw5" secondAttribute="height" multiplier="0.25" id="X3n-ad-sw0"/>
                             <constraint firstItem="ZMq-Yp-jw5" firstAttribute="trailing" secondItem="bbC-Mv-fYe" secondAttribute="trailing" id="YQz-ci-Cxo"/>
+                            <constraint firstItem="54E-th-LgQ" firstAttribute="height" secondItem="mPM-Ij-jRT" secondAttribute="height" id="a98-ZJ-iIh"/>
                             <constraint firstAttribute="trailing" secondItem="54E-th-LgQ" secondAttribute="trailing" id="kCL-27-bzb"/>
                             <constraint firstItem="54E-th-LgQ" firstAttribute="leading" secondItem="ZMq-Yp-jw5" secondAttribute="leading" id="oAy-Mx-Xfc"/>
                             <constraint firstItem="BNF-Tm-lv9" firstAttribute="leading" secondItem="ZMq-Yp-jw5" secondAttribute="leading" id="ohZ-YK-9ig"/>
