@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		438B1F542364C563005BC3E7 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438B1F532364C563005BC3E7 /* NotificationManager.swift */; };
 		9B0D5356235C4DFB0009A7DD /* JellyPathClosed.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D5355235C4BB20009A7DD /* JellyPathClosed.plist */; };
 		9B0D5358235C51FF0009A7DD /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D5357235C51FF0009A7DD /* Extentions.swift */; };
 		9B29EA0A235C36D4000C5DC7 /* JellyPath.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B29EA09235C34EC000C5DC7 /* JellyPath.plist */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		438B1F532364C563005BC3E7 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		9B0D5355235C4BB20009A7DD /* JellyPathClosed.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = JellyPathClosed.plist; sourceTree = "<group>"; };
 		9B0D5357235C51FF0009A7DD /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		9B29EA09235C34EC000C5DC7 /* JellyPath.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = JellyPath.plist; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				CDF10051235B5C0500FC54C0 /* MapOverlay.swift */,
 				CDF10056235B8A8700FC54C0 /* JellyfishAnnotationView.swift */,
 				CDF10058235B8C0B00FC54C0 /* JellyfishAnnotation.swift */,
+				438B1F532364C563005BC3E7 /* NotificationManager.swift */,
 			);
 			path = "Custom Components";
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				9B0D5358235C51FF0009A7DD /* Extentions.swift in Sources */,
 				9E4E237823645676006DD3C3 /* ProgressViewController.swift in Sources */,
 				CD7870DE235B354500338FD1 /* SceneDelegate.swift in Sources */,
+				438B1F542364C563005BC3E7 /* NotificationManager.swift in Sources */,
 				CDF1004E235B586D00FC54C0 /* MapArea.swift in Sources */,
 				CDF10052235B5C0500FC54C0 /* MapOverlay.swift in Sources */,
 				CDF10059235B8C0B00FC54C0 /* JellyfishAnnotation.swift in Sources */,

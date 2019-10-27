@@ -22,6 +22,12 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let manager = NotificationManager()
+             manager.notifications = [
+                 Notification(id: "reminder-1", title: "The Jellybot is on the move again!")
+             ]
+             manager.schedule()
+        
         // Do any additional setup after loading the view.
         self.view.layoutIfNeeded()
         

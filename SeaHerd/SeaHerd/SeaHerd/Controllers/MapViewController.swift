@@ -13,12 +13,13 @@ import CoreLocation
 class MapViewController: UIViewController {
     
       override func viewWillAppear(_ animated: Bool) {
+        
+        let manager = NotificationManager()
+        manager.notifications = [
+            Notification(id: "reminder-1", title: "The Jellybot is on the move again!")
+        ]
+        manager.schedule()
 
-        let timer = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false, block: { timer in
-            //This is a public function stored in "Custom Components/Utils.swift"
-              showAlert(vc: self)
-        })
-      
         }
 
     @IBOutlet weak var titleView: UIView!
