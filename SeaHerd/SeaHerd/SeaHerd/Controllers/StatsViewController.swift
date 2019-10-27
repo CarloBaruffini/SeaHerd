@@ -9,12 +9,15 @@
 import UIKit
 import MapKit
 
-class StatsViewController: UIViewController {
+class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var firstNudgeTextView: UITextView!
-    @IBOutlet weak var firstNudgeImageView: UIImageView!
-    @IBOutlet weak var secondNudgeTextView: UITextView!
-    @IBOutlet weak var secondNudgeImageView: UIImageView!
+    
+    @IBOutlet weak var tipsTableView: UITableView!
+    
+//    @IBOutlet weak var firstNudgeTextView: UITextView!
+//    @IBOutlet weak var firstNudgeImageView: UIImageView!
+//    @IBOutlet weak var secondNudgeTextView: UITextView!
+//    @IBOutlet weak var secondNudgeImageView: UIImageView!
     @IBOutlet weak var myJellyBotView: UIView!
     @IBOutlet weak var operationTimeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
@@ -46,14 +49,16 @@ class StatsViewController: UIViewController {
             self.operationTime = self.operationTime + Int(timer.timeInterval)
             self.updateOperationTime(seconds: self.operationTime)
         }
-        firstNudgeTextView.text = nudges[0]
-        firstNudgeImageView.image = UIImage(named: nudgesImages[0])
-        secondNudgeTextView.text = nudges[1]
-        secondNudgeImageView.image = UIImage(named: nudgesImages[1])
+//        firstNudgeTextView.text = nudges[0]
+//        firstNudgeImageView.image = UIImage(named: nudgesImages[0])
+//        secondNudgeTextView.text = nudges[1]
+//        secondNudgeImageView.image = UIImage(named: nudgesImages[1])
         initialPos = jellyImageView.frame.origin.y
         jellybotNameLabel.text = "JB-12E4GE"
         adoptJellyBotButton.layer.cornerRadius = 8
         
+        tipsTableView.delegate = self
+        tipsTableView.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -115,5 +120,19 @@ class StatsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let identifier = indexPath.row == 0 ? "cellLeftTip" : "cellRightTip"
 
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! TipTableViewCell
+        cell.imageTip.image = UIImage(named: nudgesImages[indexPath.row])
+        cell.textTip.text = nudges[indexPath.row]
+        return cell
+       
+    }
 }

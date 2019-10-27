@@ -18,12 +18,14 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>light</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>"You need to give access to your location"</string>
+	<string>&quot;You need to give access to your location&quot;</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>"You need to give access to your location"</string>
+	<string>&quot;You need to give access to your location&quot;</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

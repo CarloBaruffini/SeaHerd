@@ -11,6 +11,7 @@
 		9B0D5356235C4DFB0009A7DD /* JellyPathClosed.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B0D5355235C4BB20009A7DD /* JellyPathClosed.plist */; };
 		9B0D5358235C51FF0009A7DD /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D5357235C51FF0009A7DD /* Extentions.swift */; };
 		9B29EA0A235C36D4000C5DC7 /* JellyPath.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B29EA09235C34EC000C5DC7 /* JellyPath.plist */; };
+		9B6E515B23663F8E009D1BAF /* TipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6E515A23663F8E009D1BAF /* TipTableViewCell.swift */; };
 		9E4E237823645676006DD3C3 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4E237723645676006DD3C3 /* ProgressViewController.swift */; };
 		9E4E237A23645872006DD3C3 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4E237923645872006DD3C3 /* ItemCollectionViewCell.swift */; };
 		9EF30C35235C484100A36D2A /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF30C34235C484100A36D2A /* OnboardingViewController.swift */; };
@@ -40,6 +41,7 @@
 		9B0D5355235C4BB20009A7DD /* JellyPathClosed.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = JellyPathClosed.plist; sourceTree = "<group>"; };
 		9B0D5357235C51FF0009A7DD /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		9B29EA09235C34EC000C5DC7 /* JellyPath.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = JellyPath.plist; sourceTree = "<group>"; };
+		9B6E515A23663F8E009D1BAF /* TipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTableViewCell.swift; sourceTree = "<group>"; };
 		9E4E237723645676006DD3C3 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		9E4E237923645872006DD3C3 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		9EF30C34235C484100A36D2A /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				CDF1004D235B586D00FC54C0 /* MapArea.swift */,
 				9E4E237923645872006DD3C3 /* ItemCollectionViewCell.swift */,
+				9B6E515A23663F8E009D1BAF /* TipTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				CD7870DC235B354500338FD1 /* AppDelegate.swift in Sources */,
 				9B0D5358235C51FF0009A7DD /* Extentions.swift in Sources */,
 				9E4E237823645676006DD3C3 /* ProgressViewController.swift in Sources */,
+				9B6E515B23663F8E009D1BAF /* TipTableViewCell.swift in Sources */,
 				CD7870DE235B354500338FD1 /* SceneDelegate.swift in Sources */,
 				438B1F542364C563005BC3E7 /* NotificationManager.swift in Sources */,
 				CDF1004E235B586D00FC54C0 /* MapArea.swift in Sources */,
