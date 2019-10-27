@@ -18,6 +18,8 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var operationTimeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var jellyImageView: UIImageView!
+    @IBOutlet weak var jellybotNameLabel: UILabel!
+    @IBOutlet weak var coordinateLabel: UILabel!
     
     private var operationTime: Int = 0
     private var initialPos: CGFloat = 0
@@ -32,6 +34,7 @@ class StatsViewController: UIViewController {
         lookUpCurrentLocation(location: location) { (placemark) in
             DispatchQueue.main.async {
                 self.locationLabel.text = placemark?.name
+                self.coordinateLabel.text = "\(location.latitude), \(location.longitude)"
             }
         }
         operationTime = 3709876
@@ -44,7 +47,9 @@ class StatsViewController: UIViewController {
         firstNudgeImageView.image = UIImage(named: nudgesImages[0])
         secondNudgeTextView.text = nudges[1]
         secondNudgeImageView.image = UIImage(named: nudgesImages[1])
-        self.initialPos = jellyImageView.frame.origin.y
+        initialPos = jellyImageView.frame.origin.y
+        jellybotNameLabel.text = "JB-12E4GE"
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

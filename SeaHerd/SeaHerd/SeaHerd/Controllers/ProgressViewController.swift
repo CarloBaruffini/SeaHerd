@@ -52,6 +52,7 @@ class ProgressViewController: UIViewController {
         case 0.75..<1.0:
             rewardLabel.text = "Reward almost Unlocked!"
             rewardButton.backgroundColor = UIColor(hexFromString: "#BBBBBB")
+            rewardButton.isEnabled = false
         case 1.0:
             rewardLabel.text = "Reward Unlocked!"
             rewardButton.backgroundColor = UIColor(hexFromString: "#003D61")

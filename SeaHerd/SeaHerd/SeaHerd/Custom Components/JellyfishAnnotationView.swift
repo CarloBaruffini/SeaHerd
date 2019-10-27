@@ -18,6 +18,6 @@ class JellyfishAnnotationView: MKAnnotationView {
     
     override init (annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-        self.image = UIImage(imageLiteralResourceName: reuseIdentifier == "jellyfish" ? "MyJellyPin.png" : "JellyPin.png")
+        self.image = UIImage(imageLiteralResourceName: reuseIdentifier == "jellyfish" ? "My JellyBot Pin.png" : "JellyBot Pin.png")
     }
 }

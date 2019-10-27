@@ -11,16 +11,6 @@ import MapKit
 import CoreLocation
 
 class MapViewController: UIViewController {
-    
-      override func viewWillAppear(_ animated: Bool) {
-        
-        let manager = NotificationManager()
-        manager.notifications = [
-            Notification(id: "reminder-1", title: "The Jellybot is on the move again!")
-        ]
-        manager.schedule()
-
-        }
 
     @IBOutlet weak var titleView: UIView!
     
@@ -58,6 +48,15 @@ class MapViewController: UIViewController {
         self.addPath(fileName: "JellyPath")
         self.addPath(fileName: "JellyPathClosed")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+      
+      let manager = NotificationManager()
+      manager.notifications = [
+          Notification(id: "reminder-1", title: "The Jellybot is on the move again!")
+      ]
+      manager.schedule()
+      }
     
     /// Add a MapOverlay to the map view
     func addOverlay() {
