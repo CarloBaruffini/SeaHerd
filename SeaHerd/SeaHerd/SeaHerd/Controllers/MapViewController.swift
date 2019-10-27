@@ -19,6 +19,8 @@ class MapViewController: UIViewController {
     /// Defines the ocean area shown in the map
     let jellyArea = MapArea(filename: "PacificOcean")
     
+    var jelliesName = ["JB-12E5HU","JB-129UY6","JB-26HU8E","JB-02O9P8"]
+    
     override func viewDidLoad() {
         // Set the controller as delegate of the mapview
         self.mapView.delegate = self
@@ -74,7 +76,8 @@ class MapViewController: UIViewController {
         let cgPoints = points.map { NSCoder.cgPoint(for: $0) }
         let coords = cgPoints.map { CLLocationCoordinate2DMake(CLLocationDegrees($0.x), CLLocationDegrees($0.y)) }
         for coord in coords {
-            let annotation = JellyfishAnnotation(coordinate: coord, title: "prova", subtitle: "")
+            let name = jelliesName.popLast() ?? "JB-TEST"
+            let annotation = JellyfishAnnotation(coordinate: coord, title: name, subtitle: "")
             self.mapView.addAnnotation(annotation)
         }
     }
