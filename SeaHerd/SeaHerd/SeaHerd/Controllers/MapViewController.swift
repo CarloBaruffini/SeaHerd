@@ -66,7 +66,7 @@ class MapViewController: UIViewController {
     
     /// Add on the map the annotation for each jellyfish to display
     func addJellyfishPins() {
-        let annotation = JellyfishAnnotation(coordinate: self.jellyArea.midCoordinate, title: "Scusa, mi  tocchi la medusa?", subtitle: "")
+        let annotation = JellyfishAnnotation(coordinate: self.jellyArea.midCoordinate, title: "JB-12E4GE", subtitle: "")
         self.mapView.addAnnotation(annotation)
         
         guard let points = MapArea.plist("JelliesLocation") as? [String] else { return }
@@ -120,7 +120,7 @@ extension MapViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
-        let annotationView = JellyfishAnnotationView(annotation: annotation, reuseIdentifier: annotation.title == "Scusa, mi  tocchi la medusa?" ? "jellyfish" : "jellyfish2")
+        let annotationView = JellyfishAnnotationView(annotation: annotation, reuseIdentifier: annotation.title == "JB-12E4GE" ? "jellyfish" : "jellyfish2")
         annotationView.canShowCallout = true
         annotationView.frame.size = CGSize(width: 50, height: 50)
         return annotationView
@@ -129,7 +129,7 @@ extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let annotationTitle = view.annotation?.title
         {
-            if annotationTitle == "Scusa, mi  tocchi la medusa?" {
+            if annotationTitle == "JB-12E4GE" {
                 tabBarController!.selectedIndex = 1
                 mapView.bringSubviewToFront(view)
             }

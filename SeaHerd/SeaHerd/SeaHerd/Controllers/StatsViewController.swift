@@ -58,7 +58,7 @@ class StatsViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         UIView.animate(withDuration: 1.5, delay: 0, options: [.repeat, .autoreverse], animations: {
-            self.jellyImageView.frame.origin.y += 20
+            self.jellyImageView.frame.origin.y += 13
         })
     }
     

@@ -173,7 +173,7 @@ those who live in them.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-Mv-fYe" userLabel="Fist Nudge View">
-                                <rect key="frame" x="0.0" y="351.5" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="366.5" width="375" height="150"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMN-Ga-lA5">
                                         <rect key="frame" x="158" y="0.0" width="209" height="150"/>
@@ -203,7 +203,7 @@ those who live in them.</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNF-Tm-lv9" userLabel="Second Nudge View">
-                                <rect key="frame" x="0.0" y="501.5" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="516.5" width="375" height="150"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-W1-gMD" userLabel="Second Nudge Text View">
                                         <rect key="frame" x="8" y="0.0" width="209" height="150"/>
@@ -239,7 +239,7 @@ those who live in them.</string>
                             <constraint firstItem="mPM-Ij-jRT" firstAttribute="top" secondItem="Sdg-BI-QrV" secondAttribute="bottom" id="5Pl-db-rRA"/>
                             <constraint firstItem="Sdg-BI-QrV" firstAttribute="leading" secondItem="14r-ko-IqQ" secondAttribute="leading" id="6wf-Tz-dzg"/>
                             <constraint firstItem="mPM-Ij-jRT" firstAttribute="leading" secondItem="ZMq-Yp-jw5" secondAttribute="leading" id="AfY-Mk-xby"/>
-                            <constraint firstItem="bbC-Mv-fYe" firstAttribute="top" secondItem="54E-th-LgQ" secondAttribute="bottom" id="L0d-IW-hPw"/>
+                            <constraint firstItem="bbC-Mv-fYe" firstAttribute="top" secondItem="54E-th-LgQ" secondAttribute="bottom" constant="15" id="L0d-IW-hPw"/>
                             <constraint firstItem="mPM-Ij-jRT" firstAttribute="trailing" secondItem="ZMq-Yp-jw5" secondAttribute="trailing" id="OdC-U7-3xV"/>
                             <constraint firstItem="Sdg-BI-QrV" firstAttribute="top" secondItem="14r-ko-IqQ" secondAttribute="top" id="Owj-Gn-jAw"/>
                             <constraint firstItem="54E-th-LgQ" firstAttribute="top" secondItem="Sdg-BI-QrV" secondAttribute="bottom" id="WSH-AS-mhf"/>
