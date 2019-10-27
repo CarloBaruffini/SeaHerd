@@ -106,7 +106,7 @@
                                 </cells>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bubbles Progress Bar" translatesAutoresizingMaskIntoConstraints="NO" id="kEe-SP-Ucc">
-                                <rect key="frame" x="142" y="630" width="130" height="83"/>
+                                <rect key="frame" x="142" y="630" width="130" height="90"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Reward almost Unlocked!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICh-Nj-OOy" userLabel="Reward Label">
                                 <rect key="frame" x="62" y="640" width="290" height="20"/>
@@ -154,7 +154,7 @@
                             <constraint firstItem="tLs-PP-eyL" firstAttribute="top" secondItem="ADs-zp-IKN" secondAttribute="bottom" id="Y8r-qQ-W6l"/>
                             <constraint firstItem="93F-tO-7l3" firstAttribute="top" secondItem="B1x-Ht-n4D" secondAttribute="bottom" constant="8" id="aQy-Xf-syN"/>
                             <constraint firstItem="ICh-Nj-OOy" firstAttribute="top" secondItem="tLs-PP-eyL" secondAttribute="bottom" constant="9" id="cic-gm-DrW"/>
-                            <constraint firstItem="miD-ex-iji" firstAttribute="top" secondItem="kEe-SP-Ucc" secondAttribute="bottom" constant="15" id="eMw-RR-BEm"/>
+                            <constraint firstItem="miD-ex-iji" firstAttribute="top" secondItem="kEe-SP-Ucc" secondAttribute="bottom" constant="8" id="eMw-RR-BEm"/>
                             <constraint firstItem="93F-tO-7l3" firstAttribute="centerX" secondItem="ZOk-dv-JEI" secondAttribute="centerX" id="eYa-qt-Qrb"/>
                             <constraint firstItem="B1x-Ht-n4D" firstAttribute="centerX" secondItem="ZOk-dv-JEI" secondAttribute="centerX" id="fWS-tZ-zd4"/>
                             <constraint firstItem="kEe-SP-Ucc" firstAttribute="top" secondItem="ZOk-dv-JEI" secondAttribute="top" constant="586" id="gtb-rP-nJ0"/>
