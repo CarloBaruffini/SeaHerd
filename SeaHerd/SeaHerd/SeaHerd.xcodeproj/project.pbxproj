@@ -32,6 +32,7 @@
 		CDF10054235B5C5800FC54C0 /* MapAreaOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10053235B5C5800FC54C0 /* MapAreaOverlayView.swift */; };
 		CDF10057235B8A8700FC54C0 /* JellyfishAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10056235B8A8700FC54C0 /* JellyfishAnnotationView.swift */; };
 		CDF10059235B8C0B00FC54C0 /* JellyfishAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF10058235B8C0B00FC54C0 /* JellyfishAnnotation.swift */; };
+		CDF6FD702366048200699990 /* OnpoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF6FD6F2366048200699990 /* OnpoardingPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		CDF10053235B5C5800FC54C0 /* MapAreaOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAreaOverlayView.swift; sourceTree = "<group>"; };
 		CDF10056235B8A8700FC54C0 /* JellyfishAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyfishAnnotationView.swift; sourceTree = "<group>"; };
 		CDF10058235B8C0B00FC54C0 /* JellyfishAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyfishAnnotation.swift; sourceTree = "<group>"; };
+		CDF6FD6F2366048200699990 /* OnpoardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnpoardingPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				CDF10043235B3FBF00FC54C0 /* MapViewController.swift */,
 				9EF30C3E235C676F00A36D2A /* StatsViewController.swift */,
 				9E4E237723645676006DD3C3 /* ProgressViewController.swift */,
+				CDF6FD6F2366048200699990 /* OnpoardingPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			files = (
 				CDF10057235B8A8700FC54C0 /* JellyfishAnnotationView.swift in Sources */,
 				CDF10047235B4F8300FC54C0 /* Utils.swift in Sources */,
+				CDF6FD702366048200699990 /* OnpoardingPageViewController.swift in Sources */,
 				CD7870DC235B354500338FD1 /* AppDelegate.swift in Sources */,
 				9B0D5358235C51FF0009A7DD /* Extentions.swift in Sources */,
 				9E4E237823645676006DD3C3 /* ProgressViewController.swift in Sources */,
