@@ -15,11 +15,14 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var firstNudgeImageView: UIImageView!
     @IBOutlet weak var secondNudgeTextView: UITextView!
     @IBOutlet weak var secondNudgeImageView: UIImageView!
+    @IBOutlet weak var myJellyBotView: UIView!
     @IBOutlet weak var operationTimeLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var jellyImageView: UIImageView!
     @IBOutlet weak var jellybotNameLabel: UILabel!
     @IBOutlet weak var coordinateLabel: UILabel!
+    @IBOutlet weak var adoptJellyBotView: UIView!
+    @IBOutlet weak var adoptJellyBotButton: UIButton!
     
     private var operationTime: Int = 0
     private var initialPos: CGFloat = 0
@@ -49,6 +52,7 @@ class StatsViewController: UIViewController {
         secondNudgeImageView.image = UIImage(named: nudgesImages[1])
         initialPos = jellyImageView.frame.origin.y
         jellybotNameLabel.text = "JB-12E4GE"
+        adoptJellyBotButton.layer.cornerRadius = 8
         
     }
     
@@ -98,6 +102,10 @@ class StatsViewController: UIViewController {
         return "\( seconds / (24 * 3600) )d, \( (seconds % (24 * 3600)) / 3600 )h, \((seconds % 3600) / 60)m, \((seconds % 3600) % 60)s"
     }
     
+    @IBAction func adoptJellyBotButtonPressed(_ sender: Any) {
+        adoptJellyBotView.isHidden = true
+        myJellyBotView.isHidden = false
+    }
     /*
     // MARK: - Navigation
 

@@ -127,6 +127,9 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
             if sender is UIButton {
                 if let destViewController = segue.destination as? UITabBarController {
                     destViewController.selectedIndex = 1
+                    let statsViewController = destViewController.viewControllers?[1] as? StatsViewController
+                    statsViewController?.adoptJellyBotView.isHidden = true
+                    statsViewController?.myJellyBotView.isHidden = false
                 }
             }
         }
